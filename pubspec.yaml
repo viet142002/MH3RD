@@ -64,6 +64,10 @@ flutter:
   assets:
     - shorebird.yaml
     - assets/images/
+    - assets/images/icons/elements/
+    - assets/images/icons/equipment/
+    - assets/images/icons/items/
+    - assets/images/icons/monsters/
     - assets/data/
 
   uses-material-design: true

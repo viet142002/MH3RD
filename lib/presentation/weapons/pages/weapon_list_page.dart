@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mh3rd/core/widgets/icon_widget.dart';
 import '../../../core/di/injection.dart';
 import '../../../core/widgets/weapon_widgets.dart';
 import '../../../core/constants/weapon_constants.dart';
@@ -291,6 +292,7 @@ class _WeaponList extends StatelessWidget {
       separatorBuilder: (_, __) => const SizedBox(height: 8),
       itemBuilder: (context, i) => _WeaponCard(
         weapon: weapons[i],
+        weaponType: type,
         onTap: () => context.go('/weapons/${type.short}/${weapons[i].index}'),
       ),
     );
@@ -299,8 +301,14 @@ class _WeaponList extends StatelessWidget {
 
 class _WeaponCard extends StatelessWidget {
   final Weapon weapon;
+  final WeaponType weaponType;
   final VoidCallback onTap;
-  const _WeaponCard({required this.weapon, required this.onTap});
+
+  const _WeaponCard({
+    required this.weapon,
+    required this.weaponType,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -320,20 +328,33 @@ class _WeaponCard extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(
-                weapon.name,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              const SizedBox(height: 8),
               Row(
                 children: [
-                  Text('Attack: ${weapon.attack}'),
-                  const SizedBox(width: 12),
-                  Text(
-                    'Affinity: ${weapon.affinity > 0 ? '+' : ''}${weapon.affinity}%',
+                  MhAssetIcon.equipment(
+                    "${weaponType.short}_rare${weapon.rarity}",
+                  ),
+                  SizedBox(width: 12),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        weapon.name,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        children: [
+                          Text('Attack: ${weapon.attack}'),
+                          const SizedBox(width: 12),
+                          Text(
+                            'Affinity: ${weapon.affinity > 0 ? '+' : ''}${weapon.affinity}%',
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ],
               ),

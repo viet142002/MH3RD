@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mh3rd/core/widgets/icon_widget.dart';
 import '../../../core/constants/weapon_constants.dart';
 import '../../../core/di/injection.dart';
 import '../../../domain/entities/weapon_entities.dart';
@@ -48,14 +49,8 @@ class _CategoryGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
+    return ListView.builder(
       padding: const EdgeInsets.all(16),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 12,
-        mainAxisSpacing: 12,
-        childAspectRatio: 1.6,
-      ),
       itemCount: categories.length,
       itemBuilder: (context, i) {
         final cat = categories[i];
@@ -87,39 +82,45 @@ class _CategoryCard extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border(left: BorderSide(color: colors.$1, width: 4)),
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Row(
             children: [
-              Text(
-                category.displayName,
-                style: Theme.of(
-                  context,
-                ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
-              ),
-              const SizedBox(height: 6),
-              Row(
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 8,
-                      vertical: 2,
+                  Text(
+                    category.displayName,
+                    style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.w700,
                     ),
-                    decoration: BoxDecoration(
-                      color: colors.$2,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Text(
-                      '${category.weapons.length} weapons',
-                      style: TextStyle(
-                        fontSize: 11,
-                        color: colors.$1,
-                        fontWeight: FontWeight.w600,
+                  ),
+                  const SizedBox(height: 6),
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 2,
+                        ),
+                        decoration: BoxDecoration(
+                          color: colors.$2,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Text(
+                          '${category.weapons.length} weapons',
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: colors.$1,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ],
               ),
+              Spacer(),
+              MhAssetIcon.equipment(category.type.short),
             ],
           ),
         ),

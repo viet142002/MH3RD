@@ -1,51 +1,108 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mh3rd/core/router/routes.dart';
+import 'package:mh3rd/presentation/main_shell.dart';
 import '../../domain/entities/weapon_entities.dart';
 import '../../presentation/weapons/pages/weapon_category_list_page.dart';
 import '../../presentation/weapons/pages/weapon_list_page.dart';
 import '../../presentation/weapons/pages/weapon_detail_page.dart';
 // import '../../presentation/weapons/pages/weapon_tree_page.dart';
 
+final _rootNavigatorKey = GlobalKey<NavigatorState>();
+final _shellNavigatorKey = GlobalKey<NavigatorState>();
+
 final router = GoRouter(
+  navigatorKey: _rootNavigatorKey,
   initialLocation: '/weapons',
   routes: [
-    GoRoute(
-      path: '/weapons',
-      name: 'weapon-categories',
-      builder: (_, __) => const WeaponCategoryListPage(),
+    ShellRoute(
+      navigatorKey: _shellNavigatorKey,
+      builder: (context, state, child) => MainShell(child: child),
       routes: [
         GoRoute(
-          path: ':type',
-          name: 'weapon-list',
-          builder: (_, state) {
-            final short = state.pathParameters['type']!;
-            final type = WeaponType.fromShort(short) ?? WeaponType.greatSword;
-            return WeaponListPage(type: type);
-          },
+          path: AppRoutes.monsters,
+          builder: (context, state) => const WeaponCategoryListPage(),
+        ),
+        GoRoute(
+          path: AppRoutes.weapons,
+          builder: (context, state) => const WeaponCategoryListPage(),
           routes: [
             GoRoute(
-              path: ':index',
-              name: 'weapon-detail',
+              path: ':type',
+              name: 'weapon-list',
               builder: (_, state) {
                 final short = state.pathParameters['type']!;
-                final index = int.parse(state.pathParameters['index']!);
                 final type =
                     WeaponType.fromShort(short) ?? WeaponType.greatSword;
-                return WeaponDetailPage(type: type, index: index);
+                return WeaponListPage(type: type);
               },
+              routes: [
+                GoRoute(
+                  path: ':index',
+                  name: 'weapon-detail',
+                  builder: (_, state) {
+                    final short = state.pathParameters['type']!;
+                    final index = int.parse(state.pathParameters['index']!);
+                    final type =
+                        WeaponType.fromShort(short) ?? WeaponType.greatSword;
+                    return WeaponDetailPage(type: type, index: index);
+                  },
+                ),
+              ],
             ),
           ],
         ),
-        // GoRoute(
-        //   path: ':type/tree',
-        //   name: 'weapon-tree',
-        //   builder: (_, state) {
-        //     final short = state.pathParameters['type']!;
-        //     final type = WeaponType.fromShort(short) ?? WeaponType.greatSword;
-        //     return WeaponTreePage(type: type);
-        //   },
-        // ),
+        GoRoute(
+          path: AppRoutes.armor,
+          builder: (context, state) => const WeaponCategoryListPage(),
+        ),
+        GoRoute(
+          path: AppRoutes.items,
+          builder: (context, state) => const WeaponCategoryListPage(),
+        ),
+        GoRoute(
+          path: AppRoutes.quests,
+          builder: (context, state) => const WeaponCategoryListPage(),
+        ),
       ],
     ),
+    // GoRoute(
+    //   path: '/weapons',
+    //   name: 'weapon-categories',
+    //   builder: (_, __) => const WeaponCategoryListPage(),
+    //   routes: [
+    //     GoRoute(
+    //       path: ':type',
+    //       name: 'weapon-list',
+    //       builder: (_, state) {
+    //         final short = state.pathParameters['type']!;
+    //         final type = WeaponType.fromShort(short) ?? WeaponType.greatSword;
+    //         return WeaponListPage(type: type);
+    //       },
+    //       routes: [
+    //         GoRoute(
+    //           path: ':index',
+    //           name: 'weapon-detail',
+    //           builder: (_, state) {
+    //             final short = state.pathParameters['type']!;
+    //             final index = int.parse(state.pathParameters['index']!);
+    //             final type =
+    //                 WeaponType.fromShort(short) ?? WeaponType.greatSword;
+    //             return WeaponDetailPage(type: type, index: index);
+    //           },
+    //         ),
+    //       ],
+    //     ),
+    // GoRoute(
+    //   path: ':type/tree',
+    //   name: 'weapon-tree',
+    //   builder: (_, state) {
+    //     final short = state.pathParameters['type']!;
+    //     final type = WeaponType.fromShort(short) ?? WeaponType.greatSword;
+    //     return WeaponTreePage(type: type);
+    //   },
+    // ),
+    // ],
+    // ),
   ],
 );
