@@ -40,6 +40,7 @@ dependencies:
   injectable: ^2.7.1+4
   shared_preferences: ^2.5.5
   equatable: ^2.0.8
+  collection: ^1.19.1
 
 dev_dependencies:
   flutter_test:
@@ -62,8 +63,9 @@ flutter:
   # the material Icons class.
   assets:
     - shorebird.yaml
-    - assets/data/mh4u.db
     - assets/images/
+    - assets/data/
+
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
