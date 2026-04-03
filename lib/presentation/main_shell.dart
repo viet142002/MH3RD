@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mh3rd/core/router/routes.dart';
+import 'package:mh3rd/core/widgets/icon_widget.dart';
 
 class MainShell extends StatelessWidget {
   final Widget child;
@@ -40,38 +41,85 @@ class MainShell extends StatelessWidget {
     final location = GoRouterState.of(context).uri.toString();
     final currentIndex = _indexFromLocation(location);
 
+    final icons = [
+      MhAssetIcon.item('book_gray', size: 24),
+      MhAssetIcon.monster('Black_Diablos', size: 24),
+      MhAssetIcon.equipment('gs', size: 24),
+      MhAssetIcon.item('scraps_gray', size: 24),
+      Icon(Icons.menu, size: 24),
+    ];
+
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      extendBody: true,
       body: child,
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
-        onTap: (i) => _onTap(context, i),
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.black54,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.catching_pokemon),
-            label: 'Monsters',
-            activeIcon: Icon(Icons.catching_pokemon, color: Colors.blue),
+      bottomNavigationBar: SafeArea(
+        child: Container(
+          height: 64,
+          margin: const EdgeInsets.fromLTRB(24, 0, 24, 12),
+          decoration: BoxDecoration(
+            color: Colors.black54,
+            borderRadius: BorderRadius.circular(24),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.architecture),
-            label: 'Weapons',
-            activeIcon: Icon(Icons.architecture, color: Colors.blue),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final tabWidth = constraints.maxWidth / 5;
+              return Stack(
+                children: [
+                  // Animated Indicator
+                  AnimatedPositioned(
+                    duration: const Duration(milliseconds: 500),
+                    curve: Curves.easeOutCubic,
+                    left: currentIndex * tabWidth,
+                    bottom: 8,
+                    width: tabWidth,
+                    height: 4,
+                    child: Center(
+                      child: Container(
+                        width: 16,
+                        height: 4,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      ),
+                    ),
+                  ),
+                  // Icons
+                  Row(
+                    children: List.generate(5, (index) {
+                      final isSelected = index == currentIndex;
+                      return SizedBox(
+                        width: tabWidth,
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            customBorder: const CircleBorder(),
+                            onTap: () => _onTap(context, index),
+                            child: Center(
+                              child: AnimatedContainer(
+                                duration: const Duration(milliseconds: 300),
+                                curve: Curves.easeOutCubic,
+                                transform: Matrix4.identity()
+                                  ..scale(isSelected ? 1.2 : 1.0),
+                                transformAlignment: Alignment.center,
+                                child: AnimatedOpacity(
+                                  duration: const Duration(milliseconds: 300),
+                                  opacity: isSelected ? 1.0 : 0.5,
+                                  child: icons[index],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    }),
+                  ),
+                ],
+              );
+            },
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.shield), label: 'Armor'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.inventory_2),
-            label: 'Items',
-            activeIcon: Icon(Icons.inventory_2, color: Colors.blue),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.assignment),
-            label: 'Quests',
-            activeIcon: Icon(Icons.assignment, color: Colors.blue),
-          ),
-        ],
+        ),
       ),
     );
   }
