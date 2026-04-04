@@ -199,8 +199,8 @@ class MonsterModel extends Monster {
     if (j['carves'] != null) {
       carves = (j['carves'] as List).map((c) {
         final cm = c as Map<String, dynamic>;
-        final name = cm['name'] != null
-            ? cm['name'] as String? ?? 'Body'
+        final name = (cm['name'] as Map<String, dynamic>)['hgg'] != null
+            ? (cm['name'] as Map<String, dynamic>)['hgg'] as String? ?? 'Body'
             : 'Body';
         return CarveGroup(
           partName: name,
@@ -214,8 +214,8 @@ class MonsterModel extends Monster {
     if (j['shinies'] != null) {
       shinies = (j['shinies'] as List).map((s) {
         final sm = s as Map<String, dynamic>;
-        final action = sm['action'] != null
-            ? sm['action'] as String? ?? '?'
+        final action = (sm['action'] as Map<String, dynamic>)['hgg'] != null
+            ? (sm['action'] as Map<String, dynamic>)['hgg'] as String? ?? '?'
             : '?';
         return ShinyGroup(
           action: action,

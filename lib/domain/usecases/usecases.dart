@@ -168,19 +168,23 @@ class GetMonstersByItem {
   Future<List<Monster>> call(int itemId) => r.getMonstersByItemId(itemId);
 }
 
-/// Lấy carve list với item names đã join
-class GetMonsterCarveWithItems {
+class MonsterDetail {
+  final Monster monster;
+  final Map<int, Item> items;
+  const MonsterDetail({required this.monster, required this.items});
+}
+
+/// Lấy dữ liệu monster kèm theo map các item liên quan
+class GetMonsterDetail {
   final MonsterRepository monsterRepo;
   final ItemRepository itemRepo;
-  const GetMonsterCarveWithItems(this.monsterRepo, this.itemRepo);
-  Future<Map<String, Map<int, Item?>>> call(int monsterId) async {
+  const GetMonsterDetail(this.monsterRepo, this.itemRepo);
+  Future<MonsterDetail?> call(int monsterId) async {
     final monster = await monsterRepo.getById(monsterId);
-    if (monster == null) return {};
+    if (monster == null) return null;
     final allIds = monster.allItemIds;
     final itemMap = await itemRepo.getMapByIds(allIds);
-    return {
-      for (final id in allIds) id.toString(): {id: itemMap[id]},
-    };
+    return MonsterDetail(monster: monster, items: itemMap);
   }
 }
 

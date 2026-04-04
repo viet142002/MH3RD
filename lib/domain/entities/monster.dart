@@ -37,6 +37,12 @@ class ShinyGroup extends Equatable {
   });
   @override
   List<Object?> get props => [action];
+
+  List<DropEntry> forRank(Rank rank) => switch (rank) {
+    Rank.low => low,
+    Rank.high => high,
+    Rank.baby => baby,
+  };
 }
 
 class Monster extends Equatable {

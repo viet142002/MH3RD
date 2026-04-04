@@ -30,9 +30,6 @@ class MainShell extends StatelessWidget {
       case 3:
         context.go(AppRoutes.items);
         break;
-      case 4:
-        context.go(AppRoutes.quests);
-        break;
     }
   }
 
@@ -42,7 +39,6 @@ class MainShell extends StatelessWidget {
     final currentIndex = _indexFromLocation(location);
 
     final icons = [
-      MhAssetIcon.item('book_gray', size: 24),
       MhAssetIcon.monster('Black_Diablos', size: 24),
       MhAssetIcon.equipment('gs', size: 24),
       MhAssetIcon.item('scraps_gray', size: 24),
@@ -63,7 +59,7 @@ class MainShell extends StatelessWidget {
           ),
           child: LayoutBuilder(
             builder: (context, constraints) {
-              final tabWidth = constraints.maxWidth / 5;
+              final tabWidth = constraints.maxWidth / icons.length;
               return Stack(
                 children: [
                   // Animated Indicator
@@ -87,7 +83,8 @@ class MainShell extends StatelessWidget {
                   ),
                   // Icons
                   Row(
-                    children: List.generate(5, (index) {
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: List.generate(icons.length, (index) {
                       final isSelected = index == currentIndex;
                       return SizedBox(
                         width: tabWidth,

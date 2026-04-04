@@ -6,6 +6,8 @@ import '../../domain/entities/weapon.dart';
 import '../../presentation/weapons/pages/weapon_category_list_page.dart';
 import '../../presentation/weapons/pages/weapon_list_page.dart';
 import '../../presentation/weapons/pages/weapon_detail_page.dart';
+import '../../presentation/monsters/pages/monster_list_page.dart';
+import '../../presentation/monsters/pages/monster_detail_page.dart';
 // import '../../presentation/weapons/pages/weapon_tree_page.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -21,7 +23,16 @@ final router = GoRouter(
       routes: [
         GoRoute(
           path: AppRoutes.monsters,
-          builder: (context, state) => const WeaponCategoryListPage(),
+          builder: (context, state) => const MonsterListPage(),
+          routes: [
+            GoRoute(
+              path: ':id',
+              builder: (context, state) {
+                final id = int.parse(state.pathParameters['id']!);
+                return MonsterDetailPage(id: id);
+              },
+            ),
+          ],
         ),
         GoRoute(
           path: AppRoutes.weapons,

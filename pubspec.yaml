@@ -63,7 +63,10 @@ flutter:
   # the material Icons class.
   assets:
     - shorebird.yaml
-    - assets/images/
+    - assets/images/icons/monsters/
+    - assets/images/icons/equipment/
+    - assets/images/icons/items/
+    - assets/images/icons/elements/
     - assets/data/
 
   uses-material-design: true

@@ -61,7 +61,7 @@ Future<void> configureDependencies() async {
     ..registerLazySingleton(() => GetMonsterById(getIt()))
     ..registerLazySingleton(() => SearchMonsters(getIt()))
     ..registerLazySingleton(() => GetMonstersByItem(getIt()))
-    ..registerLazySingleton(() => GetMonsterCarveWithItems(getIt(), getIt()));
+    ..registerLazySingleton(() => GetMonsterDetail(getIt(), getIt()));
 
   // ── Armor usecases ────────────────────────────────────────────────────────
   getIt
