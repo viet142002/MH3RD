@@ -86,7 +86,7 @@ class WeaponModel extends Weapon {
   }) {
     return WeaponModel(
       index: index,
-      name: (json['name'] as Map<String, dynamic>)['hgg'] as String,
+      name: json['name'] as String,
       description: json['description'] as String? ?? '',
       rarity: json['rarity'] as int,
       attack: json['attack'] as int,
@@ -159,7 +159,7 @@ class WeaponCategoryModel extends WeaponCategory {
 
     return WeaponCategoryModel(
       type: type,
-      displayName: (json['name'] as Map<String, dynamic>)['hgg'] as String,
+      displayName: json['name'] as String,
       weapons: weapons,
     );
   }
