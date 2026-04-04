@@ -15,11 +15,9 @@ class MonsterDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => MonsterBloc(
-        getAll: getIt(),
-        getDetail: getIt(),
-        search: getIt(),
-      )..add(MonsterDetailRequested(id)),
+      create: (_) =>
+          MonsterBloc(getAll: getIt(), getDetail: getIt(), search: getIt())
+            ..add(MonsterDetailRequested(id)),
       child: Scaffold(
         appBar: AppBar(
           title: BlocBuilder<MonsterBloc, MonsterState>(
@@ -131,7 +129,9 @@ class _MonsterDetailViewState extends State<_MonsterDetailView>
 
   Widget _buildCarvesList(List<CarveGroup> groups) {
     if (groups.isEmpty) {
-      return const Center(child: Text('No carves data available for this rank'));
+      return const Center(
+        child: Text('No carves data available for this rank'),
+      );
     }
     return ListView.builder(
       padding: const EdgeInsets.all(16),
@@ -166,7 +166,9 @@ class _MonsterDetailViewState extends State<_MonsterDetailView>
 
   Widget _buildShiniesList(List<ShinyGroup> groups) {
     if (groups.isEmpty) {
-      return const Center(child: Text('No shinies data available for this rank'));
+      return const Center(
+        child: Text('No shinies data available for this rank'),
+      );
     }
     return ListView.builder(
       padding: const EdgeInsets.all(16),
@@ -201,9 +203,10 @@ class _MonsterDetailViewState extends State<_MonsterDetailView>
 
   Widget _buildDropTile(DropEntry drop) {
     final item = widget.detail.items[drop.itemId];
+    String icon = '${item?.icon}_${item?.color}';
     return ListTile(
       dense: true,
-      leading: MhAssetIcon.item(item?.icon ?? '1'),
+      leading: MhAssetIcon.item(icon),
       title: Text(item?.name ?? 'Unknown Item'),
       subtitle: drop.count > 1 ? Text('Quantity: ${drop.count}') : null,
       trailing: Text(
