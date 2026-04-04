@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mh3rd/core/router/routes.dart';
 import 'package:mh3rd/presentation/main_shell.dart';
-import '../../domain/entities/weapon_entities.dart';
+import '../../domain/entities/weapon.dart';
 import '../../presentation/weapons/pages/weapon_category_list_page.dart';
 import '../../presentation/weapons/pages/weapon_list_page.dart';
 import '../../presentation/weapons/pages/weapon_detail_page.dart';

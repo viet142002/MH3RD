@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/di/injection.dart';
 import '../../../core/widgets/weapon_widgets.dart';
-import '../../../domain/entities/weapon_entities.dart';
+import '../../../domain/entities/weapon.dart';
 import '../bloc/weapon_bloc.dart';
 import '../bloc/weapon_event_state.dart';
 

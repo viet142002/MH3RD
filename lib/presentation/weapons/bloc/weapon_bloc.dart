@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../domain/entities/weapon_entities.dart';
-import '../../../domain/usecases/weapon_usecases.dart';
+import '../../../domain/entities/weapon.dart';
+import '../../../domain/usecases/usecases.dart';
 import 'weapon_event_state.dart';
 
 class WeaponBloc extends Bloc<WeaponEvent, WeaponState> {
@@ -8,7 +8,7 @@ class WeaponBloc extends Bloc<WeaponEvent, WeaponState> {
   final GetWeaponsByCategory _getByCategory;
   final GetWeaponDetail _getDetail;
   final FilterWeapons _filterWeapons;
-  final GetWeaponCraftingTree _getTree;
+  // final GetWeaponCraftingTree _getTree;
   final GetWeaponLineage _getLineage;
 
   WeaponBloc({
@@ -22,7 +22,7 @@ class WeaponBloc extends Bloc<WeaponEvent, WeaponState> {
        _getByCategory = getByCategory,
        _getDetail = getDetail,
        _filterWeapons = filterWeapons,
-       _getTree = getTree,
+       // _getTree = getTree,
        _getLineage = getLineage,
        super(const WeaponInitial()) {
     on<WeaponCategoriesRequested>(_onCategories);
@@ -75,12 +75,10 @@ class WeaponBloc extends Bloc<WeaponEvent, WeaponState> {
     try {
       final all = await _getByCategory(event.type);
       final filtered = await _filterWeapons(
-        FilterWeaponsParams(
-          type: event.type,
-          rarity: event.rarity,
-          element: event.element,
-          nameQuery: event.nameQuery,
-        ),
+        type: event.type,
+        rarity: event.rarity,
+        element: event.element,
+        query: event.nameQuery,
       );
       emit(
         WeaponListLoaded(

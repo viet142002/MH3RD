@@ -5,7 +5,7 @@ import 'package:mh3rd/core/widgets/icon_widget.dart';
 import '../../../core/di/injection.dart';
 import '../../../core/widgets/weapon_widgets.dart';
 import '../../../core/constants/weapon_constants.dart';
-import '../../../domain/entities/weapon_entities.dart';
+import '../../../domain/entities/weapon.dart';
 import '../bloc/weapon_bloc.dart';
 import '../bloc/weapon_event_state.dart';
 
@@ -204,7 +204,7 @@ class _FilterChips extends StatelessWidget {
               child: FilterChip(
                 label: Text('R$r'),
                 selected: activeRarity == r,
-                selectedColor: rarityColor(r).withOpacity(0.2),
+                selectedColor: rarityColor(r).withValues(alpha: 0.2),
                 checkmarkColor: rarityColor(r),
                 labelStyle: TextStyle(
                   color: activeRarity == r ? rarityColor(r) : null,
@@ -222,7 +222,7 @@ class _FilterChips extends StatelessWidget {
               child: FilterChip(
                 label: Text(el.displayName),
                 selected: activeElement == el,
-                selectedColor: elementColor(el).withOpacity(0.15),
+                selectedColor: elementColor(el).withValues(alpha: 0.15),
                 checkmarkColor: elementColor(el),
                 labelStyle: TextStyle(
                   color: activeElement == el ? elementColor(el) : null,
@@ -289,7 +289,7 @@ class _WeaponList extends StatelessWidget {
     return ListView.separated(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       itemCount: weapons.length,
-      separatorBuilder: (_, __) => const SizedBox(height: 8),
+      separatorBuilder: (context, index) => const SizedBox(height: 8),
       itemBuilder: (context, i) => _WeaponCard(
         weapon: weapons[i],
         weaponType: type,

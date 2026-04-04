@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import '../../../domain/entities/weapon_entities.dart';
+import '../../../domain/entities/weapon.dart';
 
 // ─────────────────────────────────────────────
 // Events

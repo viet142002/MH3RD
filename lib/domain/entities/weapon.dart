@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
+import 'shared.dart';
+export 'shared.dart';
 
-// ─────────────────────────────────────────────
-// Enums
-// ─────────────────────────────────────────────
+// ─── Enums ───────────────────────────────────────────────────────────────────
 
 enum WeaponType {
   greatSword('gs', 'Great Swords'),
@@ -19,9 +19,9 @@ enum WeaponType {
   final String displayName;
   const WeaponType(this.short, this.displayName);
 
-  static WeaponType? fromShort(String short) {
+  static WeaponType? fromShort(String s) {
     for (final t in values) {
-      if (t.short == short) return t;
+      if (t.short == s) return t;
     }
     return null;
   }
@@ -46,17 +46,7 @@ enum WeaponElement {
     return null;
   }
 
-  String get displayName => switch (this) {
-    WeaponElement.fire => 'Fire',
-    WeaponElement.water => 'Water',
-    WeaponElement.thunder => 'Thunder',
-    WeaponElement.ice => 'Ice',
-    WeaponElement.dragon => 'Dragon',
-    WeaponElement.poison => 'Poison',
-    WeaponElement.paralyze => 'Paralyze',
-    WeaponElement.sleep => 'Sleep',
-    WeaponElement.blast => 'Blast',
-  };
+  String get displayName => name[0].toUpperCase() + name.substring(1);
 }
 
 enum PhialType {
@@ -89,26 +79,12 @@ enum ShellingType {
   }
 }
 
-// ─────────────────────────────────────────────
-// Value objects
-// ─────────────────────────────────────────────
-
-class MaterialRequirement extends Equatable {
-  final int id;
-  final int count;
-
-  const MaterialRequirement({required this.id, required this.count});
-
-  @override
-  List<Object?> get props => [id, count];
-}
+// ─── Value objects ───────────────────────────────────────────────────────────
 
 class ImproveInfo extends Equatable {
   final int from;
   final List<MaterialRequirement> materials;
-
   const ImproveInfo({required this.from, required this.materials});
-
   @override
   List<Object?> get props => [from, materials];
 }
@@ -116,20 +92,15 @@ class ImproveInfo extends Equatable {
 class UpgradeInfo extends Equatable {
   final int price;
   final List<MaterialRequirement> materials;
-
   const UpgradeInfo({required this.price, required this.materials});
-
   @override
   List<Object?> get props => [price, materials];
 }
 
-// ─────────────────────────────────────────────
-// Weapon entity
-// ─────────────────────────────────────────────
+// ─── Weapon entity ───────────────────────────────────────────────────────────
 
 class Weapon extends Equatable {
-  /// 1-based index — khớp với giá trị trong upgrades/path/improve.from.
-  final int index;
+  final int index; // 1-based, khớp với upgrades/path/improve.from
   final String name;
   final String description;
   final int rarity;
@@ -140,28 +111,20 @@ class Weapon extends Equatable {
   final int? defense;
   final WeaponElement? element;
   final int? elemAttack;
-
-  /// Độ sắc bén cơ bản [red, orange, yellow, green, blue, white, purple].
-  final List<int> sharpness;
-
-  /// Độ sắc bén khi có Sharpness+1.
-  final List<int>? sharpnessp;
-
+  final List<int>
+  sharpness; // [red, orange, yellow, green, blue, white, purple]
+  final List<int>? sharpnessp; // với Sharpness+1
   final List<MaterialRequirement>? create;
   final List<MaterialRequirement>? scraps;
   final ImproveInfo? improve;
   final UpgradeInfo? upgrade;
-
-  /// Index các vũ khí có thể nâng cấp tiếp.
-  final List<int>? upgrades;
-
-  /// Cây phả hệ từ gốc đến vũ khí cha.
-  final List<int>? path;
-
-  // Đặc thù theo loại
-  final PhialType? phial;
+  final List<int>? upgrades; // index con
+  final List<int>? path; // cây phả hệ
+  // Gunlance
   final ShellingType? shellingType;
   final int? shellingLevel;
+  // Switch Axe
+  final PhialType? phial;
 
   const Weapon({
     required this.index,
@@ -183,18 +146,15 @@ class Weapon extends Equatable {
     this.upgrade,
     this.upgrades,
     this.path,
-    this.phial,
     this.shellingType,
     this.shellingLevel,
+    this.phial,
   });
 
-  bool get isRootWeapon => improve == null;
+  bool get isRoot => improve == null;
   bool get hasElement => element != null;
   bool get hasDefenseBonus => defense != null && defense! > 0;
-  bool get canUpgrade => upgrades != null && upgrades!.isNotEmpty;
-  bool get hasSharpenedVariant => sharpnessp != null;
-
-  Set<int> get allMaterialIds {
+  Set<int> get materialIds {
     final ids = <int>{};
     create?.forEach((m) => ids.add(m.id));
     scraps?.forEach((m) => ids.add(m.id));
@@ -205,14 +165,7 @@ class Weapon extends Equatable {
 
   @override
   List<Object?> get props => [index, name, rarity];
-
-  @override
-  String toString() => 'Weapon(#$index $name r$rarity atk$attack)';
 }
-
-// ─────────────────────────────────────────────
-// WeaponCategory entity
-// ─────────────────────────────────────────────
 
 class WeaponCategory extends Equatable {
   final WeaponType type;
@@ -225,29 +178,19 @@ class WeaponCategory extends Equatable {
     required this.weapons,
   });
 
-  Weapon? getByIndex(int index) {
+  Weapon? getByIndex(int i) {
     try {
-      return weapons.firstWhere((w) => w.index == index);
+      return weapons.firstWhere((w) => w.index == i);
     } catch (_) {
       return null;
     }
   }
 
-  List<Weapon> get rootWeapons => weapons.where((w) => w.isRootWeapon).toList();
-
-  List<Weapon> byRarity(int rarity) =>
-      weapons.where((w) => w.rarity == rarity).toList();
-
+  List<Weapon> get roots => weapons.where((w) => w.isRoot).toList();
+  List<Weapon> byRarity(int r) => weapons.where((w) => w.rarity == r).toList();
   List<Weapon> byElement(WeaponElement el) =>
       weapons.where((w) => w.element == el).toList();
-
-  Set<int> get allMaterialIds {
-    final ids = <int>{};
-    for (final w in weapons) {
-      ids.addAll(w.allMaterialIds);
-    }
-    return ids;
-  }
+  Set<int> get allMaterialIds => weapons.expand((w) => w.materialIds).toSet();
 
   @override
   List<Object?> get props => [type];

@@ -1,4 +1,4 @@
-import '../entities/weapon_entities.dart';
+import '../entities/weapon.dart';
 
 abstract class WeaponRepository {
   Future<List<WeaponCategory>> getAllCategories();

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../domain/entities/weapon_entities.dart';
+import '../../domain/entities/weapon.dart';
 import '../constants/weapon_constants.dart';
 
 // ─────────────────────────────────────────────

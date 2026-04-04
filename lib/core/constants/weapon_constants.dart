@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../domain/entities/weapon_entities.dart';
+import '../../domain/entities/weapon.dart';
 
 /// 7 màu sharpness từ đỏ → tím (theo thứ tự trong mảng sharpness[]).
 const kSharpnessColors = [
