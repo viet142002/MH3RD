@@ -41,17 +41,21 @@ class FilterWeapons {
     WeaponElement? element,
     String? query,
   }) async {
-    List<Weapon> list;
-    if (rarity != null)
-      list = await r.filterByRarity(type: type, rarity: rarity);
-    else if (element != null)
-      list = await r.filterByElement(type: type, element: element);
-    else
-      list = await r.getByCategory(type);
+    List<Weapon> list = await r.getByCategory(type);
+
+    if (rarity != null) {
+      list = list.where((w) => w.rarity == rarity).toList();
+    }
+    
+    if (element != null) {
+      list = list.where((w) => w.element == element).toList();
+    }
+
     if (query != null && query.isNotEmpty) {
       final q = query.toLowerCase();
       list = list.where((w) => w.name.toLowerCase().contains(q)).toList();
     }
+    
     return list;
   }
 }
