@@ -1,0 +1,25 @@
+Analyzing weapons...                                            
+
+  error - Target of URI doesn't exist: '../../../domain/usecases/weapon_usecases.dart' - lib\presentation\weapons\bloc\weapon_bloc.dart:3:8 - uri_does_not_exist
+  error - Undefined class 'GetAllWeaponCategories' - lib\presentation\weapons\bloc\weapon_bloc.dart:7:9 - undefined_class
+  error - Undefined class 'GetWeaponsByCategory' - lib\presentation\weapons\bloc\weapon_bloc.dart:8:9 - undefined_class
+  error - Undefined class 'GetWeaponDetail' - lib\presentation\weapons\bloc\weapon_bloc.dart:9:9 - undefined_class
+  error - Undefined class 'FilterWeapons' - lib\presentation\weapons\bloc\weapon_bloc.dart:10:9 - undefined_class
+  error - Undefined class 'GetWeaponCraftingTree' - lib\presentation\weapons\bloc\weapon_bloc.dart:11:9 - undefined_class
+warning - The value of the field '_getTree' isn't used - lib\presentation\weapons\bloc\weapon_bloc.dart:11:31 - unused_field
+  error - Undefined class 'GetWeaponLineage' - lib\presentation\weapons\bloc\weapon_bloc.dart:12:9 - undefined_class
+  error - Undefined class 'GetAllWeaponCategories' - lib\presentation\weapons\bloc\weapon_bloc.dart:15:14 - undefined_class
+  error - Undefined class 'GetWeaponsByCategory' - lib\presentation\weapons\bloc\weapon_bloc.dart:16:14 - undefined_class
+  error - Undefined class 'GetWeaponDetail' - lib\presentation\weapons\bloc\weapon_bloc.dart:17:14 - undefined_class
+  error - Undefined class 'FilterWeapons' - lib\presentation\weapons\bloc\weapon_bloc.dart:18:14 - undefined_class
+  error - Undefined class 'GetWeaponCraftingTree' - lib\presentation\weapons\bloc\weapon_bloc.dart:19:14 - undefined_class
+  error - Undefined class 'GetWeaponLineage' - lib\presentation\weapons\bloc\weapon_bloc.dart:20:14 - undefined_class
+  error - The method 'FilterWeaponsParams' isn't defined for the type 'WeaponBloc' - lib\presentation\weapons\bloc\weapon_bloc.dart:78:9 - undefined_method
+warning - Unused import: '../../../core/constants/weapon_constants.dart' - lib\presentation\weapons\pages\weapon_category_list_page.dart:5:8 - unused_import
+  error - The getter 'hasDefenseBonus' isn't defined for the type 'Weapon' - lib\presentation\weapons\pages\weapon_detail_page.dart:160:19 - undefined_getter
+  error - The name 'MaterialRequirement' isn't a type, so it can't be used as a type argument - lib\presentation\weapons\pages\weapon_detail_page.dart:260:14 - non_type_as_type_argument
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\weapons\pages\weapon_list_page.dart:207:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\weapons\pages\weapon_list_page.dart:225:49 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\presentation\weapons\pages\weapon_list_page.dart:292:29 - unnecessary_underscores
+
+21 issues found. (ran in 1.4s)

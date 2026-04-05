@@ -1,0 +1,1324 @@
+[
+  {
+    "name": "Torso Up",
+    "copy": "plt",
+    "bounds": []
+  },
+  {
+    "name": "Poison",
+    "bounds": [
+      {
+        "name": "Poison Negated",
+        "points": "10"
+      },
+      {
+        "name": "Poison [x2]",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Paralysis",
+    "bounds": [
+      {
+        "name": "Parlysis Negatd",
+        "points": "10"
+      },
+      {
+        "name": "Paralysis [x2]",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Sleep",
+    "bounds": [
+      {
+        "name": "Sleep Negated",
+        "points": "10"
+      },
+      {
+        "name": "Sleep [x2]",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Stun",
+    "bounds": [
+      {
+        "name": "Stun Negated",
+        "points": "15"
+      },
+      {
+        "name": "Stun Halved",
+        "points": "10"
+      },
+      {
+        "name": "Stun [x2]",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Mud/snow",
+    "bounds": [
+      {
+        "name": "Mud/Snow Res",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Sense",
+    "bounds": [
+      {
+        "name": "Sneak",
+        "points": "10"
+      },
+      {
+        "name": "Taunt",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Health",
+    "bounds": [
+      {
+        "name": "Health +50",
+        "points": "15"
+      },
+      {
+        "name": "Health +20",
+        "points": "10"
+      },
+      {
+        "name": "Health -10",
+        "points": "-10"
+      },
+      {
+        "name": "Health -30",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Rec Speed",
+    "bounds": [
+      {
+        "name": "Recovery Spd +2",
+        "points": "15"
+      },
+      {
+        "name": "Recovery Spd +1",
+        "points": "10"
+      },
+      {
+        "name": "Recovery Spd -1",
+        "points": "-10"
+      },
+      {
+        "name": "Recovery Spd -2",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Sharpness",
+    "bounds": [
+      {
+        "name": "Sharp Sword",
+        "points": "10"
+      },
+      {
+        "name": "Blunt",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Artisan",
+    "bounds": [
+      {
+        "name": "Sharpness +1",
+        "points": "15"
+      }
+    ]
+  },
+  {
+    "name": "Fencing",
+    "bounds": [
+      {
+        "name": "ESP",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Expert",
+    "bounds": [
+      {
+        "name": "Rcklss Abndn +3",
+        "points": "20"
+      },
+      {
+        "name": "Rcklss Abndn +2",
+        "points": "15"
+      },
+      {
+        "name": "Rcklss Abndn +1",
+        "points": "10"
+      },
+      {
+        "name": "Rcklss Abndn -1",
+        "points": "-10"
+      },
+      {
+        "name": "Rcklss Abndn -2",
+        "points": "-15"
+      },
+      {
+        "name": "Rcklss Abndn -3",
+        "points": "-20"
+      }
+    ]
+  },
+  {
+    "name": "Sharpener",
+    "bounds": [
+      {
+        "name": "Spd Sharpening",
+        "points": "10"
+      },
+      {
+        "name": "Slow Sharpening",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Guard",
+    "bounds": [
+      {
+        "name": "Guard +2",
+        "points": "15"
+      },
+      {
+        "name": "Guard +1",
+        "points": "10"
+      },
+      {
+        "name": "Guard -1",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Guard Up",
+    "bounds": [
+      {
+        "name": "Guard Inc",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Auto-guard",
+    "bounds": []
+  },
+  {
+    "name": "Reload Speed",
+    "bounds": [
+      {
+        "name": "Reload Spd +3",
+        "points": "20"
+      },
+      {
+        "name": "Reload Spd +2",
+        "points": "15"
+      },
+      {
+        "name": "Reload Spd +1",
+        "points": "10"
+      },
+      {
+        "name": "Reload Spd -1",
+        "points": "-10"
+      },
+      {
+        "name": "Reload Spd -2",
+        "points": "-15"
+      },
+      {
+        "name": "Reload Spd -3",
+        "points": "-20"
+      }
+    ]
+  },
+  {
+    "name": "Recoil",
+    "bounds": [
+      {
+        "name": "RecoilReductn+3",
+        "points": "20"
+      },
+      {
+        "name": "RecoilReductn+2",
+        "points": "15"
+      },
+      {
+        "name": "RecoilReductn+1",
+        "points": "10"
+      },
+      {
+        "name": "RecoilReductn-1",
+        "points": "-10"
+      },
+      {
+        "name": "RecoilReductn-2",
+        "points": "-15"
+      },
+      {
+        "name": "RecoilReductn-3",
+        "points": "-20"
+      }
+    ]
+  },
+  {
+    "name": "Normal S Up",
+    "bounds": [
+      {
+        "name": "NrmlS/RapdBowUp",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Pierce S Up",
+    "bounds": [
+      {
+        "name": "PrceS/PrceBowUp",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Pellet S Up",
+    "bounds": [
+      {
+        "name": "PlltS/SctrBowUp",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Normal Sadd",
+    "bounds": [
+      {
+        "name": "Norml S All Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Pierce Sadd",
+    "bounds": [
+      {
+        "name": "Prce S All Add",
+        "points": "15"
+      },
+      {
+        "name": "Prce S LV1 Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Pellet Sadd",
+    "bounds": [
+      {
+        "name": "Pllt S All Add",
+        "points": "15"
+      },
+      {
+        "name": "Pllt S LV1 Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Crag S Add",
+    "bounds": []
+  },
+  {
+    "name": "Clust S Add",
+    "bounds": [
+      {
+        "name": "Clust S All Add",
+        "points": "15"
+      },
+      {
+        "name": "Clust S LV1 Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Status",
+    "bounds": [
+      {
+        "name": "AbnrmlStsAtk +2",
+        "points": "15"
+      },
+      {
+        "name": "AbnrmlStsAtk +1",
+        "points": "10"
+      },
+      {
+        "name": "AbnrmlStAtkDown",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Elemental",
+    "bounds": [
+      {
+        "name": "Element Atk Up",
+        "points": "10"
+      },
+      {
+        "name": "Elemnt Atk Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Bomb Str Up",
+    "bounds": [
+      {
+        "name": "Bombardier",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Hunger",
+    "bounds": [
+      {
+        "name": "Hunger Negated",
+        "points": "15"
+      },
+      {
+        "name": "Hunger Halved",
+        "points": "10"
+      },
+      {
+        "name": "Hunger Inc [Lo]",
+        "points": "-10"
+      },
+      {
+        "name": "Hunger Inc [Hi]",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Gluttony",
+    "bounds": [
+      {
+        "name": "Picky Eater",
+        "points": "15"
+      },
+      {
+        "name": "Filled Up",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Attack",
+    "bounds": [
+      {
+        "name": "Atk Up (L)",
+        "points": "20"
+      },
+      {
+        "name": "Atk Up (M)",
+        "points": "15"
+      },
+      {
+        "name": "Atk Up (S)",
+        "points": "10"
+      },
+      {
+        "name": "Atk Down (S)",
+        "points": "-10"
+      },
+      {
+        "name": "Atk Down (M)",
+        "points": "-15"
+      },
+      {
+        "name": "Atk Down (L)",
+        "points": "-20"
+      }
+    ]
+  },
+  {
+    "name": "Defense",
+    "bounds": [
+      {
+        "name": "Def Up (L)",
+        "points": "20"
+      },
+      {
+        "name": "Def Up (M)",
+        "points": "15"
+      },
+      {
+        "name": "Def Up (S)",
+        "points": "10"
+      },
+      {
+        "name": "Def Down (S)",
+        "points": "-10"
+      },
+      {
+        "name": "Def Down (M)",
+        "points": "-15"
+      },
+      {
+        "name": "Def Down (L)",
+        "points": "-20"
+      }
+    ]
+  },
+  {
+    "name": "Protection",
+    "bounds": [
+      {
+        "name": "Divine Protectn",
+        "points": "10"
+      },
+      {
+        "name": "Demonic Protctn",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Hearing Protection",
+    "bounds": [
+      {
+        "name": "HighGrdeEarplug",
+        "points": "15"
+      },
+      {
+        "name": "Earplug",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Anti-theft",
+    "bounds": [
+      {
+        "name": "Steal No Effct",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Wide Area",
+    "bounds": [
+      {
+        "name": "Wide Area +2",
+        "points": "20"
+      },
+      {
+        "name": "Wide Area +1",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Backpacking",
+    "bounds": [
+      {
+        "name": "Backpckng Exprt",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Fire Res",
+    "bounds": [
+      {
+        "name": "Fire Res (L)",
+        "points": "15"
+      },
+      {
+        "name": "Fire Res (S)",
+        "points": "10"
+      },
+      {
+        "name": "Fire Res Weaknd",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Water Res",
+    "bounds": [
+      {
+        "name": "Water Res (L)",
+        "points": "15"
+      },
+      {
+        "name": "Water Res (S)",
+        "points": "10"
+      },
+      {
+        "name": "Watr Res Weaknd",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Thunder Res",
+    "bounds": [
+      {
+        "name": "Thndr Res (L)",
+        "points": "15"
+      },
+      {
+        "name": "Thndr Res (S)",
+        "points": "10"
+      },
+      {
+        "name": "Thdr Res Weaknd",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Ice Res",
+    "bounds": [
+      {
+        "name": "Ice Res (L)",
+        "points": "15"
+      },
+      {
+        "name": "Ice Res (S)",
+        "points": "10"
+      },
+      {
+        "name": "Ice Res Weaknd",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Dragon Res",
+    "bounds": [
+      {
+        "name": "Dragon Res (L)",
+        "points": "15"
+      },
+      {
+        "name": "Dragon Res (S)",
+        "points": "10"
+      },
+      {
+        "name": "Drgn Res Weaknd",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Heat Resistance",
+    "bounds": [
+      {
+        "name": "Heat Cancel",
+        "points": "10"
+      },
+      {
+        "name": "Heat Inc",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Cold Resistance",
+    "bounds": [
+      {
+        "name": "Cold Eliminate",
+        "points": "10"
+      },
+      {
+        "name": "Cold Increase",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Wind Pressure",
+    "bounds": [
+      {
+        "name": "Wind Anchor",
+        "points": "15"
+      },
+      {
+        "name": "Wind Breaker",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Gathering",
+    "bounds": [
+      {
+        "name": "Gathering +2",
+        "points": "15"
+      },
+      {
+        "name": "Gathering +1",
+        "points": "10"
+      },
+      {
+        "name": "Gathering -1",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "High Speed Gathering",
+    "bounds": [
+      {
+        "name": "Hi-SpdGathering",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Whim",
+    "bounds": [
+      {
+        "name": "Divine Whim",
+        "points": "15"
+      },
+      {
+        "name": "Spirit's Whim",
+        "points": "10"
+      },
+      {
+        "name": "Spectre's Whim",
+        "points": "-10"
+      },
+      {
+        "name": "Devil's Whim",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Fate",
+    "bounds": [
+      {
+        "name": "Luck Booster",
+        "points": "15"
+      },
+      {
+        "name": "Good Luck",
+        "points": "10"
+      },
+      {
+        "name": "Bad Luck",
+        "points": "-10"
+      },
+      {
+        "name": "Calamity",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Psychic",
+    "bounds": [
+      {
+        "name": "Autotracker",
+        "points": "15"
+      },
+      {
+        "name": "Detect",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Recovery Level",
+    "bounds": [
+      {
+        "name": "Recovery Up",
+        "points": "10"
+      },
+      {
+        "name": "Recovery Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Combo Rate",
+    "bounds": [
+      {
+        "name": "Combne Suc +45%",
+        "points": "15"
+      },
+      {
+        "name": "Combne Suc +20%",
+        "points": "10"
+      },
+      {
+        "name": "Combne Suc -10%",
+        "points": "-10"
+      },
+      {
+        "name": "Combne Suc -20%",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Combination Rate",
+    "bounds": [
+      {
+        "name": "Bullet Limit",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Evasion",
+    "bounds": [
+      {
+        "name": "Evade +2",
+        "points": "15"
+      },
+      {
+        "name": "Evade +1",
+        "points": "10"
+      },
+      {
+        "name": "Evade Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Potential",
+    "bounds": [
+      {
+        "name": "Adrenaline +2",
+        "points": "15"
+      },
+      {
+        "name": "Adrenaline +1",
+        "points": "10"
+      },
+      {
+        "name": "Worry",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Stamina Recovery",
+    "bounds": [
+      {
+        "name": "Item Use Up",
+        "points": "10"
+      },
+      {
+        "name": "Item Use Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Stamina",
+    "bounds": [
+      {
+        "name": "Runner",
+        "points": "10"
+      },
+      {
+        "name": "Flat Footed",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Loading",
+    "bounds": [
+      {
+        "name": "Load Up",
+        "points": "15"
+      }
+    ]
+  },
+  {
+    "name": "Precision",
+    "bounds": [
+      {
+        "name": "Accuracy +2",
+        "points": "15"
+      },
+      {
+        "name": "Accuracy +1",
+        "points": "10"
+      },
+      {
+        "name": "Accuracy -1",
+        "points": "-10"
+      },
+      {
+        "name": "Accuracy -2",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Eating",
+    "bounds": [
+      {
+        "name": "Quick Eating +2",
+        "points": "15"
+      },
+      {
+        "name": "Quick Eating +1",
+        "points": "10"
+      },
+      {
+        "name": "Slow Life",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Carving",
+    "bounds": [
+      {
+        "name": "Carving Expert",
+        "points": "15"
+      }
+    ]
+  },
+  {
+    "name": "Quake Resistance",
+    "bounds": [
+      {
+        "name": "Quake Resist",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Evade Dist",
+    "bounds": [
+      {
+        "name": "Evasion Up",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Crit Draw",
+    "bounds": [
+      {
+        "name": "Unsheathe Crit",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Speed Setup",
+    "bounds": [
+      {
+        "name": "Trap Master",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Constitution",
+    "bounds": [
+      {
+        "name": "Constitution +2",
+        "points": "15"
+      },
+      {
+        "name": "Constitution +1",
+        "points": "10"
+      },
+      {
+        "name": "Constitution -1",
+        "points": "-10"
+      },
+      {
+        "name": "Constitution -2",
+        "points": "-15"
+      }
+    ]
+  },
+  {
+    "name": "Rewards",
+    "bounds": [
+      {
+        "name": "Rewards Celeb",
+        "points": "15"
+      },
+      {
+        "name": "Rewards Expert",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Perception",
+    "bounds": [
+      {
+        "name": "Trnquilizr Guru",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Fast Charge",
+    "bounds": [
+      {
+        "name": "Concentration",
+        "points": "10"
+      },
+      {
+        "name": "Distraction",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Punish Draw",
+    "bounds": [
+      {
+        "name": "Unsheathe Stun",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Blight Resistance",
+    "bounds": [
+      {
+        "name": "Blight Negated",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Adversity",
+    "bounds": [
+      {
+        "name": "Resilience",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Rapid Fire",
+    "bounds": [
+      {
+        "name": "Rapid Shot +1",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Dungmaster",
+    "bounds": [
+      {
+        "name": "DungBombExpert",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Antiseptic",
+    "bounds": [
+      {
+        "name": "Antiseptic",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Poison Cadd",
+    "bounds": [
+      {
+        "name": "Poison Ct Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Paraly Cadd",
+    "bounds": [
+      {
+        "name": "Parlysis Ct Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Sleep Cadd",
+    "bounds": [
+      {
+        "name": "Sleep Ct Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Power Cadd",
+    "bounds": [
+      {
+        "name": "Power Ct Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Razor Cadd",
+    "bounds": [
+      {
+        "name": "Razor Ct Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Horn",
+    "bounds": [
+      {
+        "name": "Flute Expert",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Gunnery",
+    "bounds": [
+      {
+        "name": "Gunnery King",
+        "points": "15"
+      },
+      {
+        "name": "Gunnery Master",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Awaken",
+    "bounds": [
+      {
+        "name": "Unleashed +2",
+        "points": "15"
+      },
+      {
+        "name": "Unleashed +1",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Huntsman",
+    "bounds": [
+      {
+        "name": "Huntsman's Life",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Fortitude",
+    "bounds": [
+      {
+        "name": "Impudence",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Fire Attack",
+    "bounds": [
+      {
+        "name": "Fire Element +2",
+        "points": "15"
+      },
+      {
+        "name": "Fire Element +1",
+        "points": "10"
+      },
+      {
+        "name": "Fire Elmnt Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Water Attack",
+    "bounds": [
+      {
+        "name": "Water Elemnt +2",
+        "points": "15"
+      },
+      {
+        "name": "Water Elemnt +1",
+        "points": "10"
+      },
+      {
+        "name": "WaterElmnt Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Thunder Attack",
+    "bounds": [
+      {
+        "name": "Thndr Elemnt +2",
+        "points": "15"
+      },
+      {
+        "name": "Thndr Elemnt +1",
+        "points": "10"
+      },
+      {
+        "name": "ThndrElmnt Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Ice Attack",
+    "bounds": [
+      {
+        "name": "Ice Element +2",
+        "points": "15"
+      },
+      {
+        "name": "Ice Element +1",
+        "points": "10"
+      },
+      {
+        "name": "Ice Elemnt Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Dragon Attack",
+    "bounds": [
+      {
+        "name": "Dragn Elemnt +2",
+        "points": "15"
+      },
+      {
+        "name": "Dragn Elemnt +1",
+        "points": "10"
+      },
+      {
+        "name": "Drgn Elmnt Down",
+        "points": "-10"
+      }
+    ]
+  },
+  {
+    "name": "Cutter Sadd",
+    "bounds": [
+      {
+        "name": "Cutter S Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Fatige Cadd",
+    "bounds": [
+      {
+        "name": "Fatigue Ct Add",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Debilitate",
+    "bounds": [
+      {
+        "name": "Exploiter",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Slam",
+    "bounds": [
+      {
+        "name": "Ruiner",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Ko",
+    "bounds": [
+      {
+        "name": "Improved KO",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Fatigue Attack",
+    "bounds": [
+      {
+        "name": "Enfeebler",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Sheathe",
+    "bounds": [
+      {
+        "name": "Fast Sheathe",
+        "points": "10"
+      }
+    ]
+  },
+  {
+    "name": "Will Recovery",
+    "bounds": [
+      {
+        "name": "StaminaRecov Up",
+        "points": "10"
+      },
+      {
+        "name": "StmnaRecov Down",
+        "points": "-10"
+      }
+    ]
+  }
+]

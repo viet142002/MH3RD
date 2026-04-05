@@ -1,0 +1,52 @@
+[
+    {
+        "_id": 1,
+        "name": "Misty Peaks",
+        "map": "map_misty_peaks.png"
+    },
+    {
+        "_id": 2,
+        "name": "Sandy Plains",
+        "map": "map_sandy_plains.png"
+    },
+    {
+        "_id": 3,
+        "name": "Flooded Forest",
+        "map": "map_flooded_forest.png"
+    },
+    {
+        "_id": 4,
+        "name": "Tundra",
+        "map": "map_tundra.png"
+    },
+    {
+        "_id": 5,
+        "name": "Volcano",
+        "map": "map_volcano.png"
+    },
+    {
+        "_id": 6,
+        "name": "Lava Canyon",
+        "map": "map_lava_canyon.png"
+    },
+    {
+        "_id": 7,
+        "name": "Sacred Land",
+        "map": "map_sacred_land.png"
+    },
+    {
+        "_id": 8,
+        "name": "Deserted Island",
+        "map": "map_deserted_island.png"
+    },
+    {
+        "_id": 9,
+        "name": "Polar Field",
+        "map": "map_polar_field.png"
+    },
+    {
+        "_id": 10,
+        "name": "Land Arena",
+        "map": "map_land_arena.png"
+    }
+]

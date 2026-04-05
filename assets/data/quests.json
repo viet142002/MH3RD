@@ -1,0 +1,5589 @@
+[
+  {
+    "_id": 1,
+    "no": "1/9",
+    "name": "Hunt Arzuros",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "no": "2/9",
+    "name": "Hunt Bulldrome",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "no": "3/9",
+    "name": "Hunt Great Jaggi",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "no": "4/9",
+    "name": "Collect 7 Royal Honey",
+    "time": "Day",
+    "reward": 900,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 686,
+        "quantity": 7,
+        "action": "collect"
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "no": "5/9",
+    "name": "Hunt 10 Jaggi",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 13,
+        "quantity": 10,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 6,
+    "no": "6/9",
+    "name": "Collect 5 Crystal Bone",
+    "time": "Night",
+    "reward": 900,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": []
+  },
+  {
+    "_id": 7,
+    "no": "7/9",
+    "name": "Hunt Great Wroggi",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 8,
+    "no": "8/9",
+    "name": "Hunt 10 Wroggi",
+    "time": "Night",
+    "reward": 1200,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 18,
+        "quantity": 10,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 9,
+    "no": "9/9",
+    "name": "Collect 20 Special Mushroom",
+    "time": "Day",
+    "reward": 900,
+    "type": "N",
+    "hub": "G",
+    "star": 1,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 687,
+        "quantity": 20,
+        "action": "collect"
+      }
+    ]
+  },
+  {
+    "_id": 10,
+    "no": "1/12",
+    "name": "Slay 10 Bullfango",
+    "time": "Night",
+    "reward": 1200,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 22,
+        "quantity": 10,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 11,
+    "no": "2/12",
+    "name": "Slay 3 Jaggia",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 14,
+        "quantity": 3,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 12,
+    "no": "3/12",
+    "name": "Hunt Barroth",
+    "time": "Day",
+    "reward": 2400,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 13,
+    "no": "4/12",
+    "name": "Hunt Nibelsnarf",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 14,
+    "no": "5/12",
+    "name": "Hunt Qurupeco",
+    "time": "Day",
+    "reward": 2400,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 15,
+    "no": "6/12",
+    "name": "Hunt Volvidon",
+    "time": "Night",
+    "reward": 2400,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 16,
+    "no": "7/12",
+    "name": "Gather 5 Monster Livers",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 728,
+        "quantity": 5,
+        "action": "gather"
+      }
+    ]
+  },
+  {
+    "_id": 17,
+    "no": "8/12",
+    "name": "Hunt Royal Ludroth",
+    "time": "Day",
+    "reward": 2400,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 18,
+    "no": "9/12",
+    "name": "Slay 10 Ludroth",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 33,
+        "quantity": 10,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 19,
+    "no": "10/12",
+    "name": "Hunt Gigginox",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 20,
+    "no": "11/12",
+    "name": "Hunt Lagombi",
+    "time": "Day",
+    "reward": 2400,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 25,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 21,
+    "no": "12/12",
+    "name": "Gather 8 Bloodstones",
+    "time": "Night",
+    "reward": 900,
+    "type": "N",
+    "hub": "G",
+    "star": 2,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 708,
+        "quantity": 8,
+        "action": "gather"
+      }
+    ]
+  },
+  {
+    "_id": 22,
+    "no": "1/19",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 23,
+    "no": "2/19",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 24,
+    "no": "3/19",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 25,
+    "no": "4/19",
+    "name": "Hunt Great Jaggi",
+    "time": "Night",
+    "reward": 2400,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 26,
+    "no": "5/19",
+    "name": "Slay 20 Jaggi",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 13,
+        "quantity": 20,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 27,
+    "no": "6/19",
+    "name": "Deliver 20 Special Mushrooms",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 687,
+        "quantity": 20,
+        "action": "collect"
+      }
+    ]
+  },
+  {
+    "_id": 28,
+    "no": "7/19",
+    "name": "Hunt Barroth",
+    "time": "Night",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 29,
+    "no": "8/19",
+    "name": "Hunt Great Jaggi",
+    "time": "Day",
+    "reward": 2400,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 30,
+    "no": "9/19",
+    "name": "Slay 8 Rhenoplos",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 8,
+        "quantity": 8,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 31,
+    "no": "10/19",
+    "name": "Deliver 10 Monster Liver",
+    "time": "Night",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 728,
+        "quantity": 10,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 32,
+    "no": "11/19",
+    "name": "Hunt Royal Ludroth",
+    "time": "Night",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 33,
+    "no": "12/19",
+    "name": "Hunt Great Wroggi",
+    "time": "Night",
+    "reward": 3600,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 34,
+    "no": "13/19",
+    "name": "Hunt Bulldrome",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 35,
+    "no": "14/19",
+    "name": "Hunt 10 Ludroth",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 33,
+        "quantity": 10,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 36,
+    "no": "15/19",
+    "name": "Deliver 3 Golden Fish",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 694,
+        "quantity": 10,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 37,
+    "no": "16/19",
+    "name": "Hunt Qurupeco",
+    "time": "Day",
+    "reward": 4200,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 38,
+    "no": "17/19",
+    "name": "Hunt Arzuros",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 39,
+    "no": "18/19",
+    "name": "Slay 8 Jaggia",
+    "time": "Day",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 14,
+        "quantity": 8,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 40,
+    "no": "19/19",
+    "name": "Slay 50 Bnahabra",
+    "time": "Night",
+    "reward": 1800,
+    "type": "N",
+    "hub": "G",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 4,
+        "quantity": 50,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 41,
+    "no": "Urgent!",
+    "name": "Hunt Gigginox",
+    "time": "Day",
+    "reward": 5400,
+    "type": "U",
+    "hub": "G",
+    "star": 3,
+    "map_id": 4,
+    "unlock_condition": "All 3★ Key Quests",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 42,
+    "no": "1/24",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 43,
+    "no": "2/24",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 44,
+    "no": "3/24",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 45,
+    "no": "4/24",
+    "name": "Hunt Rathian",
+    "time": "Night",
+    "reward": 5400,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 46,
+    "no": "5/24",
+    "name": "Hunt Nargacuga",
+    "time": "Day",
+    "reward": 5400,
+    "type": "K",
+    "hub": "G",
+    "star": 4,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 47,
+    "no": "6/24",
+    "name": "Hunt Qurupeco",
+    "time": "Night",
+    "reward": 4200,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 48,
+    "no": "7/24",
+    "name": "Hunt 20 Bullfango",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 22,
+        "quantity": 20,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 49,
+    "no": "8/24",
+    "name": "Hunt Volvidon",
+    "time": "Day",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 50,
+    "no": "9/24",
+    "name": "Hunt Nibelsnarf",
+    "time": "Day",
+    "reward": 5400,
+    "type": "K",
+    "hub": "G",
+    "star": 4,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 51,
+    "no": "10/24",
+    "name": "Deliver 10 Wyvern Bones",
+    "time": "Night",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 244,
+        "quantity": 10,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 52,
+    "no": "11/24",
+    "name": "Hunt Nargacuga",
+    "time": "Day",
+    "reward": 5400,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 53,
+    "no": "12/24",
+    "name": "Hunt Rathian",
+    "time": "Day",
+    "reward": 5400,
+    "type": "K",
+    "hub": "G",
+    "star": 4,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 54,
+    "no": "13/24",
+    "name": "Hunt Lagombi",
+    "time": "Night",
+    "reward": 3600,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 25,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 55,
+    "no": "14/24",
+    "name": "Hunt Great Baggi",
+    "time": "Night",
+    "reward": 4200,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 17,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 56,
+    "no": "15/24",
+    "name": "Hunt Gigginox",
+    "time": "Day",
+    "reward": 5400,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 57,
+    "no": "16/24",
+    "name": "Hunt Barioth",
+    "time": "Night",
+    "reward": 5400,
+    "type": "K",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 47,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 58,
+    "no": "17/24",
+    "name": "Slay 20 Baggi",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 16,
+        "quantity": 20,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 59,
+    "no": "18/24",
+    "name": "Deliver 8 Bloodstones",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 708,
+        "quantity": 8,
+        "action": "gather"
+      }
+    ]
+  },
+  {
+    "_id": 60,
+    "no": "19/24",
+    "name": "Deliver 5 Popo Tongue",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 722,
+        "quantity": 5,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 61,
+    "no": "20/24",
+    "name": "Hunt Volvidon",
+    "time": "Night",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 62,
+    "no": "21/24",
+    "name": "Hunt Great Wroggi",
+    "time": "Day",
+    "reward": 3600,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 63,
+    "no": "22/24",
+    "name": "Hunt Uragaan",
+    "time": "Night",
+    "reward": 6000,
+    "type": "K",
+    "hub": "G",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 64,
+    "no": "23/24",
+    "name": "Slay 15 Uroktor",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 37,
+        "quantity": 15,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 65,
+    "no": "24/24",
+    "name": "Deliver 20 Coal",
+    "time": "Day",
+    "reward": 3000,
+    "type": "N",
+    "hub": "G",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 710,
+        "quantity": 20,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 66,
+    "no": "Urgent!",
+    "name": "Hunt Zinogre",
+    "time": "Night",
+    "reward": 6000,
+    "type": "U",
+    "hub": "G",
+    "star": 4,
+    "map_id": 8,
+    "unlock_condition": "All 4★ Key Quests",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 67,
+    "no": "1/22",
+    "name": "Hunt Zinogre",
+    "time": "Day",
+    "reward": 6000,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 68,
+    "no": "2/22",
+    "name": "Hunt Rathian and Duramboros",
+    "time": "Night",
+    "reward": 9000,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 69,
+    "no": "3/22",
+    "name": "Hunt Diablos",
+    "time": "Night",
+    "reward": 6600,
+    "type": "K",
+    "hub": "G",
+    "star": 5,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 51,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 70,
+    "no": "4/22",
+    "name": "Hunt Tigrex",
+    "time": "Night",
+    "reward": 6600,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 71,
+    "no": "5/22",
+    "name": "Hunt Qurupeco",
+    "time": "Day",
+    "reward": 4200,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 72,
+    "no": "6/22",
+    "name": "Hunt Diablos and Barroth",
+    "time": "Day",
+    "reward": 8400,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 51,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 73,
+    "no": "7/22",
+    "name": "Hunt Duramboros",
+    "time": "Day",
+    "reward": 6600,
+    "type": "K",
+    "hub": "G",
+    "star": 5,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 74,
+    "no": "8/22",
+    "name": "Hunt Two Nargacuga",
+    "time": "Night",
+    "reward": 8100,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 75,
+    "no": "9/22",
+    "name": "Hunt Zinogre",
+    "time": "Night",
+    "reward": 6000,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 76,
+    "no": "10/22",
+    "name": "Hunt Rathalos",
+    "time": "Night",
+    "reward": 6000,
+    "type": "K",
+    "hub": "G",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 77,
+    "no": "11/22",
+    "name": "Hunt Rathalos and Rathian",
+    "time": "Day",
+    "reward": 8400,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 78,
+    "no": "12/22",
+    "name": "Hunt Tigrex",
+    "time": "Night",
+    "reward": 6600,
+    "type": "K",
+    "hub": "G",
+    "star": 5,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 79,
+    "no": "13/22",
+    "name": "Hunt Barioth and Gigginox",
+    "time": "Day",
+    "reward": 8100,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 47,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 80,
+    "no": "14/22",
+    "name": "Hunt Agnaktor",
+    "time": "Night",
+    "reward": 6600,
+    "type": "K",
+    "hub": "G",
+    "star": 5,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 38,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 81,
+    "no": "15/22",
+    "name": "Hunt Agnaktor and Uragaan",
+    "time": "Day",
+    "reward": 9000,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 38,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 82,
+    "no": "16/22",
+    "name": "Hunt as many Barroth as you like! (2 Minimum)",
+    "time": "Day",
+    "reward": 4200,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 83,
+    "no": "17/22",
+    "name": "Hunt Arzuros, Bulldrome, Nargacuga",
+    "time": "Day",
+    "reward": 8400,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 84,
+    "no": "18/22",
+    "name": "Hunt Nibelsnarf and Tigrex",
+    "time": "Day",
+    "reward": 9000,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 85,
+    "no": "19/22",
+    "name": "Hunt Great Jaggi and Rathalos",
+    "time": "Day",
+    "reward": 6300,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 86,
+    "no": "20/22",
+    "name": "Hunt Great Wroggi and Uragaan",
+    "time": "Day",
+    "reward": 7200,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 87,
+    "no": "21/22",
+    "name": "Slay Arzuros, Great Baggi, Volvidon, and Bulldrome",
+    "time": "Day",
+    "reward": 8400,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 10,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 1,
+        "action": "slay"
+      },
+      {
+        "targetType": "monster",
+        "_id": 17,
+        "quantity": 1,
+        "action": "slay"
+      },
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "slay"
+      },
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 1,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 88,
+    "no": "22/22",
+    "name": "Repel Jhen Mohran",
+    "time": "Day",
+    "reward": 9600,
+    "type": "N",
+    "hub": "G",
+    "star": 5,
+    "map_id": 0,
+    "unlock_condition": "5★ Urgent",
+    "objectives": null
+  },
+  {
+    "_id": 89,
+    "no": "Urgent!",
+    "name": "Repel Jhen Mohran",
+    "time": "Day",
+    "reward": 9600,
+    "type": "U",
+    "hub": "G",
+    "star": 5,
+    "map_id": 0,
+    "unlock_condition": "All 5★ Key Quests",
+    "objectives": null
+  },
+  {
+    "_id": 90,
+    "no": "1/23",
+    "name": "Deliver Paw Pass",
+    "time": "Night",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 91,
+    "no": "2/23",
+    "name": "Deliver Paw Pass",
+    "time": "Night",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 92,
+    "no": "3/23",
+    "name": "Deliver Paw Pass",
+    "time": "Night",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 93,
+    "no": "4/23",
+    "name": "Deliver Paw Pass",
+    "time": "Night",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 94,
+    "no": "5/23",
+    "name": "Hunt 2 Arzuros",
+    "time": "Day",
+    "reward": 6480,
+    "type": "K",
+    "hub": "G",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 95,
+    "no": "6/23",
+    "name": "Hunt 2 Bulldrome",
+    "time": "Night",
+    "reward": 6480,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 96,
+    "no": "7/23",
+    "name": "Slay 20 Jaggi",
+    "time": "Night",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 13,
+        "quantity": 20,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 97,
+    "no": "8/23",
+    "name": "Slay 50 Bnahabra",
+    "time": "Day",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 4,
+        "quantity": 50,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 98,
+    "no": "9/23",
+    "name": "Hunt 2 Great Jaggi",
+    "time": "Night",
+    "reward": 6480,
+    "type": "K",
+    "hub": "G",
+    "star": 6,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 99,
+    "no": "10/23",
+    "name": "Hunt Barroth",
+    "time": "Day",
+    "reward": 6600,
+    "type": "K",
+    "hub": "G",
+    "star": 6,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 100,
+    "no": "11/23",
+    "name": "Hunt 2 Barroth",
+    "time": "Day",
+    "reward": 7800,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 101,
+    "no": "12/23",
+    "name": "Hunt Bulldrome",
+    "time": "Day",
+    "reward": 5400,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 102,
+    "no": "13/23",
+    "name": "Hunt Arzuros",
+    "time": "Day",
+    "reward": 5400,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 103,
+    "no": "14/23",
+    "name": "Hunt 2 Great Wroggi",
+    "time": "Night",
+    "reward": 6480,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 104,
+    "no": "15/23",
+    "name": "Hunt Purple Ludroth",
+    "time": "Day",
+    "reward": 7200,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "Quest 19",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 35,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 105,
+    "no": "16/23",
+    "name": "Hunt Royal Ludroth and Purple Ludroth",
+    "time": "Night",
+    "reward": 7800,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "Quest 19",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 35,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 106,
+    "no": "17/23",
+    "name": "Slay 20 Wroggi",
+    "time": "Day",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 18,
+        "quantity": 20,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 107,
+    "no": "18/23",
+    "name": "Hunt Great Jaggi",
+    "time": "Day",
+    "reward": 5400,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 108,
+    "no": "19/23",
+    "name": "Hunt Royal Ludroth",
+    "time": "Day",
+    "reward": 6600,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 109,
+    "no": "20/23",
+    "name": "Hunt Purple Ludroth",
+    "time": "Night",
+    "reward": 7200,
+    "type": "K",
+    "hub": "G",
+    "star": 6,
+    "map_id": 8,
+    "unlock_condition": "Quest 19",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 35,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 110,
+    "no": "21/23",
+    "name": "Slay 15 Ludroth",
+    "time": "Night",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 33,
+        "quantity": 15,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 111,
+    "no": "22/23",
+    "name": "Hunt Qurupeco",
+    "time": "Night",
+    "reward": 6000,
+    "type": "K",
+    "hub": "G",
+    "star": 6,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 112,
+    "no": "23/23",
+    "name": "Slay 20 Rhenoplos",
+    "time": "Day",
+    "reward": 4800,
+    "type": "N",
+    "hub": "G",
+    "star": 6,
+    "map_id": 10,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 8,
+        "quantity": 20,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 113,
+    "no": "Urgent!",
+    "name": "Hunt Nargacuga",
+    "time": "Night",
+    "reward": 9000,
+    "type": "U",
+    "hub": "G",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "All 6★Key Quests",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 114,
+    "no": "1/35",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Night",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 115,
+    "no": "2/35",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Night",
+    "reward": 12,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 116,
+    "no": "3/35",
+    "name": "Hunt Nargacuga",
+    "time": "Night",
+    "reward": 9000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 117,
+    "no": "4/35",
+    "name": "Hunt Rathian",
+    "time": "Day",
+    "reward": 8400,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 118,
+    "no": "5/35",
+    "name": "Hunt Volvidon",
+    "time": "Night",
+    "reward": 7200,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 119,
+    "no": "6/35",
+    "name": "Hunt Nibelsnarf",
+    "time": "Night",
+    "reward": 7800,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 120,
+    "no": "7/35",
+    "name": "Hunt 2 Nibelsnarf",
+    "time": "Day",
+    "reward": 11700,
+    "type": "K",
+    "hub": "G",
+    "star": 7,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 121,
+    "no": "8/35",
+    "name": "Hunt Sand Barioth",
+    "time": "Day",
+    "reward": 9600,
+    "type": "K",
+    "hub": "G",
+    "star": 7,
+    "map_id": 2,
+    "unlock_condition": "Quest 20",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 48,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 122,
+    "no": "9/35",
+    "name": "Hunt Qurupeco",
+    "time": "Day",
+    "reward": 6000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 123,
+    "no": "10/35",
+    "name": "Hunt Green Nargacuga",
+    "time": "Night",
+    "reward": 9600,
+    "type": "K",
+    "hub": "G",
+    "star": 7,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 50,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 124,
+    "no": "11/35",
+    "name": "Hunt Crimson Qurupeco",
+    "time": "Day",
+    "reward": 7200,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 21,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 125,
+    "no": "12/35",
+    "name": "Hunt Rathian",
+    "time": "Night",
+    "reward": 8400,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 126,
+    "no": "13/35",
+    "name": "Hunt Rathalos",
+    "time": "Day",
+    "reward": 9600,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 127,
+    "no": "14/35",
+    "name": "Hunt Green Nargacuga",
+    "time": "Day",
+    "reward": 9600,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 50,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 128,
+    "no": "15/35",
+    "name": "Slay 25 Jaggia",
+    "time": "Night",
+    "reward": 900,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 14,
+        "quantity": 25,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 129,
+    "no": "16/35",
+    "name": "Hunt Great Baggi and Lagombi",
+    "time": "Day",
+    "reward": 9360,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 17,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 25,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 130,
+    "no": "17/35",
+    "name": "Hunt Gigginox",
+    "time": "Day",
+    "reward": 7800,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 131,
+    "no": "18/35",
+    "name": "Hunt Baleful Gigginox",
+    "time": "Day",
+    "reward": 8400,
+    "type": "K",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "Quest 17",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 46,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 132,
+    "no": "19/35",
+    "name": "Hunt Gigginox and Baleful Gigginox",
+    "time": "Night",
+    "reward": 12000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "Quest 17",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 46,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 133,
+    "no": "20/35",
+    "name": "Hunt Barioth",
+    "time": "Day",
+    "reward": 9000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 47,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 134,
+    "no": "21/35",
+    "name": "Hunt Jade Barroth",
+    "time": "Day",
+    "reward": 7200,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 28,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 135,
+    "no": "22/35",
+    "name": "Hunt Barioth and Jade Barroth",
+    "time": "Night",
+    "reward": 12000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 47,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 28,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 136,
+    "no": "23/35",
+    "name": "Slay 20 Baggi",
+    "time": "Day",
+    "reward": 6000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 16,
+        "quantity": 20,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 137,
+    "no": "24/35",
+    "name": "Hunt Volvidon and Great Wroggi",
+    "time": "Day",
+    "reward": 9900,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 138,
+    "no": "25/35",
+    "name": "Hunt Uragaan",
+    "time": "Day",
+    "reward": 9600,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 139,
+    "no": "26/35",
+    "name": "Hunt Rathalos",
+    "time": "Day",
+    "reward": 9600,
+    "type": "K",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 140,
+    "no": "27/35",
+    "name": "Hunt Steel Uragaan",
+    "time": "Night",
+    "reward": 10200,
+    "type": "K",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "Quest 25",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 30,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 141,
+    "no": "28/35",
+    "name": "Hunt Uragaan and Steel Uragaan",
+    "time": "Day",
+    "reward": 14400,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "Quest 25",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 30,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 142,
+    "no": "29/35",
+    "name": "Slay 15 Uroktor",
+    "time": "Night",
+    "reward": 6000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 37,
+        "quantity": 15,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 143,
+    "no": "30/35",
+    "name": "Slay 25 Jaggi",
+    "time": "",
+    "reward": 6000,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 10,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 13,
+        "quantity": 25,
+        "action": "slay"
+      }
+    ]
+  },
+  {
+    "_id": 144,
+    "no": "31/35",
+    "name": "Hunt 3 Nargacuga",
+    "time": "Day",
+    "reward": 10200,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 3,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 145,
+    "no": "32/35",
+    "name": "Hunt Royal Ludroth, 2 Arzuros and Green Nargacuga",
+    "time": "Day",
+    "reward": 13200,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 8,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 2,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 50,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 146,
+    "no": "33/35",
+    "name": "Hunt Barroth, 2 Volvidon and Sand Barioth",
+    "time": "Day",
+    "reward": 15300,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 0,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 2,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 48,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 147,
+    "no": "34/35",
+    "name": "Hunt Barioth, 2 Lagombi and Baleful Gigginox",
+    "time": "Night",
+    "reward": 14700,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 47,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 25,
+        "quantity": 2,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 46,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 148,
+    "no": "35/35",
+    "name": "Hunt Steel Uragaan,Great Wroggi and Rathalos",
+    "time": "Night",
+    "reward": 15900,
+    "type": "N",
+    "hub": "G",
+    "star": 7,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 30,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 149,
+    "no": "Urgent!",
+    "name": "Hunt 2 Zinogre",
+    "time": "Night",
+    "reward": 14400,
+    "type": "U",
+    "hub": "G",
+    "star": 7,
+    "map_id": 1,
+    "unlock_condition": "All 7★Key Quests",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 150,
+    "no": "1/38",
+    "name": "Hunt Two Zinogre",
+    "time": "Night",
+    "reward": 14400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "See 7 Star Urgent",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 151,
+    "no": "2/38",
+    "name": "Hunt Duramboros",
+    "time": "Night",
+    "reward": 10200,
+    "type": "K",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 152,
+    "no": "3/38",
+    "name": "Hunt Nargacuga and Duramboros",
+    "time": "Day",
+    "reward": 14400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 153,
+    "no": "4/38",
+    "name": "Hunt Gold Rathian",
+    "time": "Day",
+    "reward": 9600,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "Hunt 100 wyverns*",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 41,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 154,
+    "no": "5/38",
+    "name": "Hunt Silver Rathalos",
+    "time": "Day",
+    "reward": 10800,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "Hunt 100 wyverns*",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 43,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 155,
+    "no": "6/38",
+    "name": "Hunt Gold Rathian and Silver Rathalos",
+    "time": "Night",
+    "reward": 18000,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "Quests 4 and 5",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 41,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 43,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 156,
+    "no": "7/38",
+    "name": "Hunt Diablos",
+    "time": "Day",
+    "reward": 10800,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 51,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 157,
+    "no": "8/38",
+    "name": "Hunt Black Diablos",
+    "time": "Night",
+    "reward": 11400,
+    "type": "K",
+    "hub": "G",
+    "star": 8,
+    "map_id": 2,
+    "unlock_condition": "Quest 7",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 52,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 158,
+    "no": "9/38",
+    "name": "Hunt Diablos and Black Diablos",
+    "time": "Day",
+    "reward": 16200,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 2,
+    "unlock_condition": "Quest 7",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 51,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 52,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 159,
+    "no": "10/38",
+    "name": "Hunt Tigrex and Brute Tigrex",
+    "time": "Night",
+    "reward": 16200,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 2,
+    "unlock_condition": "Quest 18",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 54,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 160,
+    "no": "11/38",
+    "name": "Hunt Black Diablos and Sand Barioth",
+    "time": "Night",
+    "reward": 15600,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 2,
+    "unlock_condition": "Quest 7",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 52,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 48,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 161,
+    "no": "12/38",
+    "name": "Hunt 2 Duramboros",
+    "time": "Day",
+    "reward": 15300,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 162,
+    "no": "13/38",
+    "name": "Hunt Nargacuga and Green Nargacuga",
+    "time": "Night",
+    "reward": 13800,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 50,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 163,
+    "no": "14/38",
+    "name": "Hunt Green Nargacuga and Purple Ludroth",
+    "time": "Day",
+    "reward": 12600,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 50,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 35,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 164,
+    "no": "15/38",
+    "name": "Hunt Rathalos and Rathian",
+    "time": "Night",
+    "reward": 15000,
+    "type": "K",
+    "hub": "G",
+    "star": 8,
+    "map_id": 0,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 165,
+    "no": "16/38",
+    "name": "Hunt Deviljho",
+    "time": "Night",
+    "reward": 12000,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 0,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 32,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 166,
+    "no": "17/38",
+    "name": "Hunt Zinogre",
+    "time": "Day",
+    "reward": 9600,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 0,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 167,
+    "no": "18/38",
+    "name": "Hunt Tigrex",
+    "time": "Day",
+    "reward": 10800,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 168,
+    "no": "19/38",
+    "name": "Hunt Deviljho",
+    "time": "Night",
+    "reward": 12000,
+    "type": "K",
+    "hub": "G",
+    "star": 8,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 32,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 169,
+    "no": "20/38",
+    "name": "Hunt Glacial Agnaktor",
+    "time": "Day",
+    "reward": 10800,
+    "type": "K",
+    "hub": "G",
+    "star": 8,
+    "map_id": 4,
+    "unlock_condition": "Quest 22",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 39,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 170,
+    "no": "21/38",
+    "name": "Hunt Baleful Gigginox and Glacial Agnaktor",
+    "time": "Night",
+    "reward": 14400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 4,
+    "unlock_condition": "Quest 22",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 46,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 39,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 171,
+    "no": "22/38",
+    "name": "Hunt Agnaktor",
+    "time": "Day",
+    "reward": 10200,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 38,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 172,
+    "no": "23/38",
+    "name": "Hunt 2 Agnaktor",
+    "time": "Night",
+    "reward": 15300,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 38,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 173,
+    "no": "24/38",
+    "name": "Hunt Brute Tigrex",
+    "time": "Day",
+    "reward": 11400,
+    "type": "K",
+    "hub": "G",
+    "star": 8,
+    "map_id": 5,
+    "unlock_condition": "Quest 18",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 54,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 174,
+    "no": "25/38",
+    "name": "Hunt Steel Uragaan and Brute Tigrex",
+    "time": "Night",
+    "reward": 16200,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 5,
+    "unlock_condition": "Quest 18",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 30,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 54,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 175,
+    "no": "26/38",
+    "name": "Hunt Crimson Qurupeco",
+    "time": "Day",
+    "reward": 7200,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 21,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 176,
+    "no": "27/38",
+    "name": "Hunt as many Qurupeco as you like! (2 Minimum)",
+    "time": "Night",
+    "reward": 7200,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 177,
+    "no": "28/38",
+    "name": "Hunt Great Jaggi, Rathian, and Zinogre",
+    "time": "Night",
+    "reward": 14400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 1,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 178,
+    "no": "29/38",
+    "name": "Hunt Great Baggi, Jade Barroth, and Glacial Agnaktor",
+    "time": "Day",
+    "reward": 15600,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 4,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 17,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 28,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 39,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 179,
+    "no": "30/38",
+    "name": "Hunt Nibelsnarf, Diablos, and Brute Tigrex",
+    "time": "Day",
+    "reward": 18000,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 2,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 51,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 54,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 180,
+    "no": "31/38",
+    "name": "Hunt Nargacuga, Purple Ludroth, and Duramboros",
+    "time": "Night",
+    "reward": 16800,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 3,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 35,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 181,
+    "no": "32/38",
+    "name": "Hunt Uragaan and Deviljho",
+    "time": "Day",
+    "reward": 18000,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 5,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 32,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 182,
+    "no": "33/38",
+    "name": "Hunt Gigginox, Tigrex, and Duramboros",
+    "time": "UNKNOWN",
+    "reward": 19200,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 10,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 183,
+    "no": "34/38",
+    "name": "Hunt Purple Ludroth, Baleful Gigginox, Agnaktor, and Jade Barroth",
+    "time": "UNKNOWN",
+    "reward": 20400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 10,
+    "unlock_condition": "None",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 35,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 46,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 38,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 28,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 184,
+    "no": "35/38",
+    "name": "Hunt Black Diablos, Glacial Agnaktor, Brute Tigrex, and Zinogre",
+    "time": "UNKNOWN",
+    "reward": 21600,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 10,
+    "unlock_condition": "Clear all other Epic Hunts.",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 52,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 39,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 54,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 185,
+    "no": "36/38",
+    "name": "Hunt Akantor",
+    "time": "UNKNOWN",
+    "reward": 38400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 6,
+    "unlock_condition": "All High Rank single hunt quests**",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 55,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 186,
+    "no": "37/38",
+    "name": "Hunt Ukanlos",
+    "time": "UNKNOWN",
+    "reward": 38400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 9,
+    "unlock_condition": "All High Rank single hunt quests**",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 56,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 187,
+    "no": "38/38",
+    "name": "Hunt Alatreon",
+    "time": "UNKNOWN",
+    "reward": 38400,
+    "type": "N",
+    "hub": "G",
+    "star": 8,
+    "map_id": 7,
+    "unlock_condition": "All High Rank dual monster quests***",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 60,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 188,
+    "no": "Urgent!",
+    "name": "Hunt Jhen Mohran",
+    "time": "UNKNOWN",
+    "reward": 24000,
+    "type": "U",
+    "hub": "G",
+    "star": 8,
+    "map_id": 0,
+    "unlock_condition": "All 8★ Key Quests",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 58,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 189,
+    "no": "Urgent!",
+    "name": "Hunt Amatsu",
+    "time": "UNKNOWN",
+    "reward": 36000,
+    "type": "U",
+    "hub": "G",
+    "star": 8,
+    "map_id": 0,
+    "unlock_condition": "8★ Jhen Mohran Urgent",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 59,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 190,
+    "no": "1/19",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 191,
+    "no": "2/19",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 192,
+    "no": "3/19",
+    "name": "Hunt Qurupeco",
+    "time": "Day",
+    "reward": 1500,
+    "type": "K",
+    "hub": "V",
+    "star": 3,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 193,
+    "no": "4/19",
+    "name": "Hunt 10 Bullfango",
+    "time": "Day",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 22,
+        "quantity": 10,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 194,
+    "no": "5/19",
+    "name": "Hunt Barroth",
+    "time": "Day",
+    "reward": 1500,
+    "type": "K",
+    "hub": "V",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 195,
+    "no": "6/19",
+    "name": "Hunt Qurupeco",
+    "time": "Night",
+    "reward": 1500,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 196,
+    "no": "7/19",
+    "name": "Hunt 8 Rhenoplos",
+    "time": "Night",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 8,
+        "quantity": 8,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 197,
+    "no": "8/19",
+    "name": "Deliver 5 Monster Guts",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": []
+  },
+  {
+    "_id": 198,
+    "no": "9/19",
+    "name": "Hunt Great Wroggi",
+    "time": "Day",
+    "reward": 1500,
+    "type": "K",
+    "hub": "V",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 199,
+    "no": "10/19",
+    "name": "Hunt Royal Ludroth",
+    "time": "Day",
+    "reward": 1500,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 200,
+    "no": "11/19",
+    "name": "Hunt 20 Bnahabra",
+    "time": "Day",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 4,
+        "quantity": 20,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 201,
+    "no": "12/19",
+    "name": "Hunt Great Jaggi",
+    "time": "Night",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 15,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 202,
+    "no": "13/19",
+    "name": "Hunt Royal Ludroth",
+    "time": "Night",
+    "reward": 1500,
+    "type": "K",
+    "hub": "V",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 203,
+    "no": "14/19",
+    "name": "Hunt 10 Ludroth",
+    "time": "Day",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 33,
+        "quantity": 10,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 204,
+    "no": "15/19",
+    "name": "Deliver 15 Unique Mushrooms",
+    "time": "Day",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": []
+  },
+  {
+    "_id": 205,
+    "no": "16/19",
+    "name": "Hunt 2 Bulldrome",
+    "time": "Day",
+    "reward": 2400,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 206,
+    "no": "17/19",
+    "name": "Hunt Lagombi",
+    "time": "Day",
+    "reward": 1500,
+    "type": "K",
+    "hub": "V",
+    "star": 3,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 25,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 207,
+    "no": "18/19",
+    "name": "Hunt 10 Baggi",
+    "time": "Day",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 16,
+        "quantity": 10,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 208,
+    "no": "19/19",
+    "name": "Deliver 5 Anteka Antlers",
+    "time": "Night",
+    "reward": 900,
+    "type": "N",
+    "hub": "V",
+    "star": 3,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 275,
+        "quantity": 5,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 209,
+    "no": "Urgent!",
+    "name": "Hunt Rathian",
+    "time": "Day",
+    "reward": 3000,
+    "type": "U",
+    "hub": "V",
+    "star": 3,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 210,
+    "no": "1/17",
+    "name": "Deliver Paw Pass Ticket",
+    "time": "Day",
+    "reward": 12,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 675,
+        "quantity": 1,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 211,
+    "no": "2/17",
+    "name": "Hunt 1 Rathian",
+    "time": "Day",
+    "reward": 3000,
+    "type": "K",
+    "hub": "V",
+    "star": 4,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 212,
+    "no": "3/17",
+    "name": "Hunt 1 Volvidon",
+    "time": "Day",
+    "reward": 2400,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 213,
+    "no": "4/17",
+    "name": "Hunt 1 Nibelsnarf",
+    "time": "Day",
+    "reward": 2700,
+    "type": "K",
+    "hub": "V",
+    "star": 4,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 214,
+    "no": "5/17",
+    "name": "Hunt 1 Rathian",
+    "time": "Night",
+    "reward": 3000,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 215,
+    "no": "6/17",
+    "name": "Hunt Qurupeco",
+    "time": "Day",
+    "reward": 1500,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 20,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 216,
+    "no": "7/17",
+    "name": "Hunt 2 Arzuros",
+    "time": "Night",
+    "reward": 2400,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 217,
+    "no": "8/17",
+    "name": "Hunt Great Baggi",
+    "time": "Day",
+    "reward": 1500,
+    "type": "K",
+    "hub": "V",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 17,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 218,
+    "no": "9/17",
+    "name": "Hunt Gigginox",
+    "time": "Night",
+    "reward": 2700,
+    "type": "K",
+    "hub": "V",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 219,
+    "no": "10/17",
+    "name": "Hunt 2 Lagombi",
+    "time": "Night",
+    "reward": 3000,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 25,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 220,
+    "no": "11/17",
+    "name": "Hunt 20 Baggi",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 16,
+        "quantity": 20,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 221,
+    "no": "12/17",
+    "name": "Deliver 8 Bloodstones",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 708,
+        "quantity": 8,
+        "action": "gather"
+      }
+    ]
+  },
+  {
+    "_id": 222,
+    "no": "13/17",
+    "name": "Hunt Volvidon",
+    "time": "Day",
+    "reward": 2400,
+    "type": "K",
+    "hub": "V",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 223,
+    "no": "14/17",
+    "name": "Hunt 2 Great Wroggi",
+    "time": "Night",
+    "reward": 3000,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 224,
+    "no": "15/17",
+    "name": "Hunt 8 Uroktor",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 37,
+        "quantity": 8,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 225,
+    "no": "16/17",
+    "name": "Hunt 20 Wroggi",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 18,
+        "quantity": 20,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 226,
+    "no": "17/17",
+    "name": "Deliver 15 coal",
+    "time": "Day",
+    "reward": 1200,
+    "type": "N",
+    "hub": "V",
+    "star": 4,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "item",
+        "_id": 710,
+        "quantity": 15,
+        "action": "deliver"
+      }
+    ]
+  },
+  {
+    "_id": 227,
+    "no": "Urgent!",
+    "name": "Hunt Zinogre",
+    "time": "Day",
+    "reward": 3600,
+    "type": "U",
+    "hub": "V",
+    "star": 4,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 228,
+    "no": "1/17",
+    "name": "Hunt Zinogre",
+    "time": "Night",
+    "reward": 3600,
+    "type": "K",
+    "hub": "V",
+    "star": 5,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 229,
+    "no": "2/17",
+    "name": "Hunt Nargacuga",
+    "time": "Night",
+    "reward": 3300,
+    "type": "K",
+    "hub": "V",
+    "star": 5,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 230,
+    "no": "3/17",
+    "name": "Hunt Nargacuga",
+    "time": "Night",
+    "reward": 3300,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 231,
+    "no": "4/17",
+    "name": "Hunt 2 Royal Ludroth",
+    "time": "Day",
+    "reward": 4200,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 232,
+    "no": "5/17",
+    "name": "Hunt Rathalos",
+    "time": "Day",
+    "reward": 3600,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 233,
+    "no": "6/17",
+    "name": "Hunt Zinogre",
+    "time": "Day",
+    "reward": 3600,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 234,
+    "no": "7/17",
+    "name": "Hunt Barioth",
+    "time": "Day",
+    "reward": 3300,
+    "type": "K",
+    "hub": "V",
+    "star": 5,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 47,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 235,
+    "no": "8/17",
+    "name": "Hunt 2 Great Baggi",
+    "time": "Night",
+    "reward": 3600,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 17,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 236,
+    "no": "9/17",
+    "name": "Hunt Uragaan",
+    "time": "Day",
+    "reward": 3600,
+    "type": "K",
+    "hub": "V",
+    "star": 5,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 237,
+    "no": "10/17",
+    "name": "Hunt Rathalos",
+    "time": "Night",
+    "reward": 3600,
+    "type": "K",
+    "hub": "V",
+    "star": 5,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 238,
+    "no": "11/17",
+    "name": "Hunt 2 Volvidon",
+    "time": "Night",
+    "reward": 4800,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 239,
+    "no": "12/17",
+    "name": "Hunt 15 Uroktor",
+    "time": "Day",
+    "reward": 1500,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 37,
+        "quantity": 15,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 240,
+    "no": "13/17",
+    "name": "Hunt 3 Rathian",
+    "time": "Day",
+    "reward": 3600,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 3,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 241,
+    "no": "14/17",
+    "name": "Hunt Bulldrome, Great Baggi, Lagombi",
+    "time": "Day",
+    "reward": 4200,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 23,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 17,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 25,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 242,
+    "no": "15/17",
+    "name": "Hunt Volvidon, Nibelsnarf",
+    "time": "Day",
+    "reward": 4800,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 26,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 36,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 243,
+    "no": "16/17",
+    "name": "Hunt Great Wroggi, Royal Ludroth",
+    "time": "Day",
+    "reward": 3600,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 19,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 244,
+    "no": "17/17",
+    "name": "Hunt Arzuros, Rathian",
+    "time": "Day",
+    "reward": 4200,
+    "type": "N",
+    "hub": "V",
+    "star": 5,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 24,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 245,
+    "no": "Urgent!",
+    "name": "Hunt Duramboros",
+    "time": "",
+    "reward": 3900,
+    "type": "U",
+    "hub": "V",
+    "star": 5,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 246,
+    "no": "1/15",
+    "name": "Hunt Duramboros",
+    "time": "Day",
+    "reward": 3900,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 247,
+    "no": "2/15",
+    "name": "Hunt Diablos",
+    "time": "Day",
+    "reward": 4200,
+    "type": "K",
+    "hub": "V",
+    "star": 6,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 51,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 248,
+    "no": "3/15",
+    "name": "Hunt Tigrex",
+    "time": "Night",
+    "reward": 4200,
+    "type": "K",
+    "hub": "V",
+    "star": 6,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 249,
+    "no": "4/15",
+    "name": "Hunt Duramboros",
+    "time": "Night",
+    "reward": 3900,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 250,
+    "no": "5/15",
+    "name": "Hunt Duramboros, Royal Ludroth",
+    "time": "Day",
+    "reward": 6000,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 3,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 31,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 34,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 251,
+    "no": "6/15",
+    "name": "Hunt Tigrex",
+    "time": "Day",
+    "reward": 4200,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 252,
+    "no": "7/15",
+    "name": "Hunt 2 Barioth",
+    "time": "Night",
+    "reward": 6600,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 47,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 253,
+    "no": "8/15",
+    "name": "Hunt Tigrex, Gigginox",
+    "time": "Day",
+    "reward": 6900,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 4,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 45,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 254,
+    "no": "9/15",
+    "name": "Hunt Agnaktor",
+    "time": "Day",
+    "reward": 3900,
+    "type": "K",
+    "hub": "V",
+    "star": 6,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 38,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 255,
+    "no": "10/15",
+    "name": "Hunt 2 Uragaan",
+    "time": "Night",
+    "reward": 7200,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 29,
+        "quantity": 2,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 256,
+    "no": "11/15",
+    "name": "Hunt Rathalos, Rathian",
+    "time": "Day",
+    "reward": 8400,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 8,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 40,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 257,
+    "no": "12/15",
+    "name": "Hunt Nargacuga, Zinogre",
+    "time": "Day",
+    "reward": 6900,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 1,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 57,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 258,
+    "no": "13/15",
+    "name": "Hunt Barroth, Diablos",
+    "time": "Night",
+    "reward": 6300,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 2,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 27,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 51,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 259,
+    "no": "14/15",
+    "name": "Hunt Rathalos, Agnaktor",
+    "time": "Day",
+    "reward": 7500,
+    "type": "N",
+    "hub": "V",
+    "star": 6,
+    "map_id": 5,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 42,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 38,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 260,
+    "no": "15/15",
+    "name": "Hunt Jhen Mohran",
+    "time": "Day",
+    "reward": 9000,
+    "type": "U",
+    "hub": "V",
+    "star": 6,
+    "map_id": 0,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 58,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  },
+  {
+    "_id": 261,
+    "no": "Urgent!",
+    "name": "Hunt Deviljho, Tigrex, Nargacuga",
+    "time": "Day",
+    "reward": 21000,
+    "type": "U",
+    "hub": "V",
+    "star": 6,
+    "map_id": 10,
+    "unlock_condition": "UNKNOWN",
+    "objectives": [
+      {
+        "targetType": "monster",
+        "_id": 32,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 53,
+        "quantity": 1,
+        "action": "hunt"
+      },
+      {
+        "targetType": "monster",
+        "_id": 49,
+        "quantity": 1,
+        "action": "hunt"
+      }
+    ]
+  }
+]

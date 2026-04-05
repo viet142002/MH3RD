@@ -1,0 +1,6 @@
+Analyzing weapons...                                            
+
+warning - The value of the field '_getTree' isn't used - lib\presentation\weapons\bloc\weapon_bloc.dart:11:31 - unused_field
+   info - Unnecessary use of multiple underscores - lib\presentation\weapons\pages\weapon_list_page.dart:292:29 - unnecessary_underscores
+
+2 issues found. (ran in 1.4s)
