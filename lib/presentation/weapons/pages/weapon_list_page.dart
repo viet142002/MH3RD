@@ -61,6 +61,82 @@ class _WeaponListViewState extends State<_WeaponListView> {
     );
   }
 
+  void _showFilterSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (sheetContext) {
+        return StatefulBuilder(
+          builder: (context, setSheetState) {
+            return Padding(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(sheetContext).viewInsets.bottom + 24,
+                left: 20,
+                right: 20,
+                top: 24,
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Filter ${widget.type.displayName}',
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                  const SizedBox(height: 16),
+                  _SearchBar(
+                    controller: _searchController,
+                    onChanged: (_) {
+                      setSheetState(() {});
+                      _applyFilter(context);
+                    },
+                  ),
+                  const SizedBox(height: 16),
+                  const Text('Filters',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8),
+                  _FilterChips(
+                    activeRarity: _activeRarity,
+                    activeElement: _activeElement,
+                    onRarityChanged: (r) {
+                      setSheetState(() {
+                        setState(() {
+                          _activeRarity = _activeRarity == r ? null : r;
+                        });
+                      });
+                      _applyFilter(context);
+                    },
+                    onElementChanged: (el) {
+                      setSheetState(() {
+                        setState(() {
+                          _activeElement =
+                              _activeElement == el ? null : el;
+                        });
+                      });
+                      _applyFilter(context);
+                    },
+                    onClear: () {
+                      setSheetState(() {
+                        setState(() {
+                          _activeRarity = null;
+                          _activeElement = null;
+                          _searchController.clear();
+                        });
+                      });
+                      _applyFilter(context);
+                    },
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,57 +151,34 @@ class _WeaponListViewState extends State<_WeaponListView> {
           _SortMenu(),
         ],
       ),
-      body: Column(
-        children: [
-          _SearchBar(
-            controller: _searchController,
-            onChanged: (_) => _applyFilter(context),
-          ),
-          _FilterChips(
-            activeRarity: _activeRarity,
-            activeElement: _activeElement,
-            onRarityChanged: (r) {
-              setState(() => _activeRarity = _activeRarity == r ? null : r);
-              _applyFilter(context);
-            },
-            onElementChanged: (el) {
-              setState(() => _activeElement = _activeElement == el ? null : el);
-              _applyFilter(context);
-            },
-            onClear: () {
-              setState(() {
-                _activeRarity = null;
-                _activeElement = null;
-                _searchController.clear();
-              });
-              _applyFilter(context);
-            },
-          ),
-          Expanded(
-            child: BlocBuilder<WeaponBloc, WeaponState>(
-              builder: (context, state) {
-                if (state is WeaponLoading) {
-                  return const Center(child: CircularProgressIndicator());
-                }
-                if (state is WeaponListLoaded) {
-                  if (state.filtered.isEmpty) {
-                    return const Center(
-                      child: Text('No weapons match your filter'),
-                    );
-                  }
-                  return _WeaponList(
-                    weapons: state.filtered,
-                    type: widget.type,
-                  );
-                }
-                if (state is WeaponError) {
-                  return Center(child: Text(state.message));
-                }
-                return const SizedBox.shrink();
-              },
-            ),
-          ),
-        ],
+      body: BlocBuilder<WeaponBloc, WeaponState>(
+        builder: (context, state) {
+          if (state is WeaponLoading) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (state is WeaponListLoaded) {
+            if (state.filtered.isEmpty) {
+              return const Center(
+                child: Text('No weapons match your filter'),
+              );
+            }
+            return _WeaponList(
+              weapons: state.filtered,
+              type: widget.type,
+            );
+          }
+          if (state is WeaponError) {
+            return Center(child: Text(state.message));
+          }
+          return const SizedBox.shrink();
+        },
+      ),
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(bottom: 70),
+        child: FloatingActionButton(
+          onPressed: () => _showFilterSheet(context),
+          child: const Icon(Icons.filter_list),
+        ),
       ),
     );
   }
