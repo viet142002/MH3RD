@@ -5,49 +5,37 @@ import 'package:mh3rd/core/di/injection.dart';
 import '../../../domain/entities/others.dart';
 import '../bloc/quest_bloc.dart';
 import '../bloc/quest_event_state.dart';
+import '../widgets/quest_filter_sheet.dart';
+import '../widgets/quest_list_item.dart';
 
-class QuestListPage extends StatelessWidget {
+class QuestListPage extends StatefulWidget {
   const QuestListPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) =>
-          QuestBloc(filter: getIt(), search: getIt(), getDetail: getIt())
-            ..add(const QuestListRequested(hub: QuestHub.village)),
-      child: const _QuestListView(),
-    );
-  }
+  State<QuestListPage> createState() => _QuestListPageState();
 }
 
-class _QuestListView extends StatefulWidget {
-  const _QuestListView();
-
-  @override
-  State<_QuestListView> createState() => _QuestListViewState();
-}
-
-class _QuestListViewState extends State<_QuestListView>
+class _QuestListPageState extends State<QuestListPage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
+  late QuestBloc _questBloc;
   final _searchController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
-    _tabController.addListener(() {
-      if (!_tabController.indexIsChanging) {
-        final hub =
-            _tabController.index == 0 ? QuestHub.village : QuestHub.guild;
-        context.read<QuestBloc>().add(QuestListRequested(hub: hub));
-      }
-    });
+    _questBloc = QuestBloc(
+      filter: getIt(),
+      search: getIt(),
+      getDetail: getIt(),
+    )..add(const QuestListRequested());
   }
 
   @override
   void dispose() {
     _tabController.dispose();
+    _questBloc.close();
     _searchController.dispose();
     super.dispose();
   }
@@ -56,198 +44,90 @@ class _QuestListViewState extends State<_QuestListView>
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      builder: (sheetContext) {
-        return BlocBuilder<QuestBloc, QuestState>(
-          builder: (context, state) {
-            if (state is! QuestListLoaded) return const SizedBox.shrink();
-            final maxStars = state.hub == QuestHub.village ? 6 : 8;
-
-            return Padding(
-              padding: EdgeInsets.only(
-                bottom: MediaQuery.of(sheetContext).viewInsets.bottom + 24,
-                left: 20,
-                right: 20,
-                top: 24,
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Filter Quests',
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  const SizedBox(height: 16),
-                  TextField(
-                    controller: _searchController,
-                    autofocus: _searchController.text.isEmpty,
-                    onChanged: (q) =>
-                        context.read<QuestBloc>().add(QuestSearchChanged(q)),
-                    decoration: InputDecoration(
-                      hintText: 'Search quests...',
-                      prefixIcon: const Icon(Icons.search),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  const Text('Star Level',
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  const SizedBox(height: 8),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    child: Row(
-                      children: List.generate(maxStars, (index) {
-                        final starValue = index + 1;
-                        final isSelected = state.star == starValue;
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: ChoiceChip(
-                            label: Text('$starValue \u2605'),
-                            selected: isSelected,
-                            onSelected: (selected) {
-                              context.read<QuestBloc>().add(
-                                    QuestListRequested(
-                                      hub: state.hub,
-                                      star: selected ? starValue : null,
-                                    ),
-                                  );
-                            },
-                          ),
-                        );
-                      }),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          },
-        );
-      },
+      backgroundColor: Colors.transparent,
+      builder: (sheetContext) => QuestFilterSheet(
+        searchController: _searchController,
+        questBloc: _questBloc,
+        activeHub: _tabController.index == 0 ? QuestHub.village : QuestHub.guild,
+      ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        bottom: false,
-        child: Column(
-          children: [
-            TabBar(
-              controller: _tabController,
-              tabs: const [
-                Tab(text: 'Village'),
-                Tab(text: 'Guild'),
-              ],
-            ),
-            Expanded(
-              child: BlocBuilder<QuestBloc, QuestState>(
-                builder: (context, state) {
-                  if (state is QuestLoading) {
-                    return const Center(child: CircularProgressIndicator());
-                  }
-                  if (state is QuestListLoaded) {
-                    return state.filtered.isEmpty
-                        ? const Center(child: Text('No quests found'))
-                        : ListView.builder(
-                            padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
-                            itemCount: state.filtered.length,
-                            itemBuilder: (context, i) {
-                              final q = state.filtered[i];
-                              return Card(
-                                margin: const EdgeInsets.only(bottom: 8),
-                                child: ListTile(
-                                  leading: CircleAvatar(
-                                    backgroundColor: _getStarColor(q.star),
-                                    child: Text(
-                                      '${q.star}',
-                                      style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ),
-                                  title: Row(
-                                    children: [
-                                      if (q.type == QuestType.key)
-                                        _buildBadge('K', Colors.amber),
-                                      if (q.type == QuestType.urgent)
-                                        _buildBadge('U', Colors.red),
-                                      if (q.type != QuestType.key &&
-                                          q.type != QuestType.urgent)
-                                        const SizedBox(width: 4),
-                                      Expanded(
-                                        child: Text(
-                                          q.name,
-                                          style: const TextStyle(
-                                            fontWeight: FontWeight.w600,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  subtitle: Text(
-                                    '${q.no} \u2022 ${q.reward}z',
-                                  ),
-                                  trailing: const Icon(
-                                    Icons.chevron_right,
-                                    size: 20,
-                                  ),
-                                  onTap: () => context.push('/quests/${q.id}'),
-                                ),
-                              );
-                            },
-                          );
-                  }
-                  if (state is QuestError) {
-                    return Center(child: Text(state.message));
-                  }
-                  return const SizedBox.shrink();
-                },
+    return BlocProvider.value(
+      value: _questBloc,
+      child: Scaffold(
+        body: SafeArea(
+          bottom: false,
+          child: Column(
+            children: [
+              TabBar(
+                controller: _tabController,
+                tabs: const [
+                  Tab(text: 'Village'),
+                  Tab(text: 'Guild'),
+                ],
+                onTap: (index) => setState(() {}),
               ),
-            ),
-          ],
+              Expanded(
+                child: TabBarView(
+                  controller: _tabController,
+                  children: [
+                    _QuestTabContent(hub: QuestHub.village),
+                    _QuestTabContent(hub: QuestHub.guild),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
-      ),
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.only(bottom: 70),
-        child: FloatingActionButton(
-          onPressed: () => _showFilterSheet(context),
-          child: const Icon(Icons.filter_list),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildBadge(String label, Color color) {
-    return Container(
-      margin: const EdgeInsets.only(right: 6),
-      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-      decoration: BoxDecoration(
-        color: color.withOpacity(0.2),
-        borderRadius: BorderRadius.circular(4),
-        border: Border.all(color: color, width: 1),
-      ),
-      child: Text(
-        label,
-        style: TextStyle(
-          color: color,
-          fontSize: 10,
-          fontWeight: FontWeight.bold,
+        floatingActionButton: Padding(
+          padding: const EdgeInsets.only(bottom: 70),
+          child: FloatingActionButton(
+            onPressed: () => _showFilterSheet(context),
+            child: const Icon(Icons.filter_list),
+          ),
         ),
       ),
     );
-  }
-
-  Color _getStarColor(int star) {
-    if (star <= 2) return Colors.green;
-    if (star <= 4) return Colors.blue;
-    if (star <= 6) return Colors.orange;
-    return Colors.red;
   }
 }
+
+class _QuestTabContent extends StatelessWidget {
+  final QuestHub hub;
+  const _QuestTabContent({required this.hub});
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocBuilder<QuestBloc, QuestState>(
+      builder: (context, state) {
+        if (state is QuestLoading || state is QuestInitial) {
+          return const Center(child: CircularProgressIndicator());
+        }
+        if (state is QuestListLoaded) {
+          final filtered = state.getFiltered(hub);
+          return filtered.isEmpty
+              ? const Center(child: Text('No quests found'))
+              : ListView.builder(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
+                  itemCount: filtered.length,
+                  itemBuilder: (context, i) {
+                    return QuestListItem(
+                      quest: filtered[i],
+                      onTap: () =>
+                          context.push('/quests/${filtered[i].id}'),
+                    );
+                  },
+                );
+        }
+        if (state is QuestError) {
+          return Center(child: Text(state.message));
+        }
+        return const SizedBox.shrink();
+      },
+    );
+  }
+}
+
+

@@ -45,38 +45,47 @@ class QuestLoading extends QuestState {
 }
 
 class QuestListLoaded extends QuestState {
-  final List<Quest> quests;
-  final List<Quest> filtered;
+  final List<Quest> villageQuests;
+  final List<Quest> guildQuests;
   final String query;
-  final QuestHub? hub;
   final int? star;
 
   const QuestListLoaded({
-    required this.quests,
-    required this.filtered,
+    required this.villageQuests,
+    required this.guildQuests,
     this.query = '',
-    this.hub,
     this.star,
   });
 
+  List<Quest> getFiltered(QuestHub hub) {
+    final list = hub == QuestHub.village ? villageQuests : guildQuests;
+    if (query.isEmpty && star == null) return list;
+
+    return list.where((q) {
+      final matchQuery = query.isEmpty ||
+          q.name.toLowerCase().contains(query.toLowerCase()) ||
+          q.no.toLowerCase().contains(query.toLowerCase());
+      final matchStar = star == null || q.star == star;
+      return matchQuery && matchStar;
+    }).toList();
+  }
+
   QuestListLoaded copyWith({
-    List<Quest>? quests,
-    List<Quest>? filtered,
+    List<Quest>? villageQuests,
+    List<Quest>? guildQuests,
     String? query,
-    QuestHub? hub,
     int? star,
   }) {
     return QuestListLoaded(
-      quests: quests ?? this.quests,
-      filtered: filtered ?? this.filtered,
+      villageQuests: villageQuests ?? this.villageQuests,
+      guildQuests: guildQuests ?? this.guildQuests,
       query: query ?? this.query,
-      hub: hub ?? this.hub,
       star: star ?? this.star,
     );
   }
 
   @override
-  List<Object?> get props => [quests, filtered, query, hub, star];
+  List<Object?> get props => [villageQuests, guildQuests, query, star];
 }
 
 class QuestDetailLoaded extends QuestState {

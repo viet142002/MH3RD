@@ -23,37 +23,26 @@ class QuestBloc extends Bloc<QuestEvent, QuestState> {
     QuestListRequested event,
     Emitter<QuestState> emit,
   ) async {
-    final currentQuery =
-        (state is QuestListLoaded) ? (state as QuestListLoaded).query : '';
-    emit(const QuestLoading());
-    try {
-      final quests = await _filter(hub: event.hub, star: event.star);
+    final s = (state is QuestListLoaded) ? (state as QuestListLoaded) : null;
+    
+    // If we already have something but want to update stars
+    if (s != null && event.star != s.star) {
+      emit(s.copyWith(star: event.star));
+      return;
+    }
 
-      // Re-apply query if any
-      List<Quest> filteredList = quests;
-      if (currentQuery.isNotEmpty) {
-        final q = currentQuery.toLowerCase();
-        filteredList =
-            quests
-                .where(
-                  (qu) =>
-                      qu.name.toLowerCase().contains(q) ||
-                      qu.no.toLowerCase().contains(q),
-                )
-                .toList();
+    if (s == null) {
+      emit(const QuestLoading());
+      try {
+        final village = await _filter(hub: QuestHub.village);
+        final guild = await _filter(hub: QuestHub.guild);
+        emit(QuestListLoaded(
+          villageQuests: village,
+          guildQuests: guild,
+        ));
+      } catch (e) {
+        emit(QuestError(e.toString()));
       }
-
-      emit(
-        QuestListLoaded(
-          quests: quests,
-          filtered: filteredList,
-          query: currentQuery,
-          hub: event.hub,
-          star: event.star,
-        ),
-      );
-    } catch (e) {
-      emit(QuestError(e.toString()));
     }
   }
 
@@ -63,23 +52,7 @@ class QuestBloc extends Bloc<QuestEvent, QuestState> {
   ) async {
     if (state is! QuestListLoaded) return;
     final s = state as QuestListLoaded;
-
-    if (event.query.isEmpty) {
-      emit(s.copyWith(filtered: s.quests, query: ''));
-      return;
-    }
-
-    final q = event.query.toLowerCase();
-    final filtered =
-        s.quests
-            .where(
-              (qu) =>
-                  qu.name.toLowerCase().contains(q) ||
-                  qu.no.toLowerCase().contains(q),
-            )
-            .toList();
-
-    emit(s.copyWith(filtered: filtered, query: event.query));
+    emit(s.copyWith(query: event.query));
   }
 
   Future<void> _onDetail(

@@ -13,11 +13,9 @@ class MonsterListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => MonsterBloc(
-        getAll: getIt(),
-        getDetail: getIt(),
-        search: getIt(),
-      )..add(const MonsterListRequested()),
+      create: (_) =>
+          MonsterBloc(getAll: getIt(), getDetail: getIt(), search: getIt())
+            ..add(const MonsterListRequested()),
       child: const _MonsterListView(),
     );
   }
@@ -111,4 +109,3 @@ class _MonsterListViewState extends State<_MonsterListView> {
     );
   }
 }
-
