@@ -85,7 +85,7 @@ class _MonsterListViewState extends State<_MonsterListView> {
                             style: const TextStyle(fontWeight: FontWeight.w600),
                           ),
                           trailing: const Icon(Icons.chevron_right, size: 20),
-                          onTap: () => context.go('/monsters/${m.id}'),
+                          onTap: () => context.push('/monsters/${m.id}'),
                         ),
                       );
                     },

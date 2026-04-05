@@ -61,7 +61,7 @@ class _WeaponDetailView extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.account_tree_outlined),
             tooltip: 'Full upgrade tree',
-            onPressed: () => context.go('/weapons/${state.type.short}/tree'),
+            onPressed: () => context.push('/weapons/${state.type.short}/tree'),
           ),
         ],
       ),
@@ -290,7 +290,7 @@ class _MaterialsCard extends StatelessWidget {
                   const Spacer(),
                   TextButton.icon(
                     onPressed: () =>
-                        context.go('/weapons/${fromType!.short}/$fromIndex'),
+                        context.push('/weapons/${fromType!.short}/$fromIndex'),
                     icon: const Icon(Icons.arrow_upward, size: 14),
                     label: const Text('From #'),
                     style: TextButton.styleFrom(
@@ -378,7 +378,7 @@ class _LineageItem extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: depth * 16.0),
       child: InkWell(
-        onTap: () => context.go('/weapons/${type.short}/${weapon.index}'),
+        onTap: () => context.push('/weapons/${type.short}/${weapon.index}'),
         borderRadius: BorderRadius.circular(8),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -451,7 +451,7 @@ class _ChildrenCard extends StatelessWidget {
                   ],
                 ),
                 onTap: () =>
-                    context.go('/weapons/${type.short}/${child.index}'),
+                    context.push('/weapons/${type.short}/${child.index}'),
               ),
           ],
         ),

@@ -149,9 +149,9 @@ class _QuestDetailView extends StatelessWidget {
               trailing: const Icon(Icons.chevron_right, size: 20),
               onTap: () {
                 if (monster != null) {
-                  context.go('/monsters/${o.targetId}');
+                  context.push('/monsters/${o.targetId}');
                 } else if (item != null) {
-                  context.go('/items/${o.targetId}');
+                  context.push('/items/${o.targetId}');
                 }
               },
             ),
@@ -165,7 +165,7 @@ class _QuestDetailView extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(4),
         border: Border.all(color: color, width: 1),
       ),

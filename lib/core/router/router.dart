@@ -16,7 +16,14 @@ final _shellNavigatorKey = GlobalKey<NavigatorState>();
 
 final router = GoRouter(
   navigatorKey: _rootNavigatorKey,
-  initialLocation: '/weapons',
+  initialLocation: AppRoutes.monsters,
+  redirect: (context, state) {
+    final currentPath = state.fullPath;
+    if (currentPath == null || currentPath == '/') {
+      return AppRoutes.monsters;
+    }
+    return null;
+  },
   routes: [
     ShellRoute(
       navigatorKey: _shellNavigatorKey,

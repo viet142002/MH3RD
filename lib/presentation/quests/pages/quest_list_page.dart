@@ -125,7 +125,9 @@ class _QuestListViewState extends State<_QuestListView>
                         child: state.filtered.isEmpty
                             ? const Center(child: Text('No quests found'))
                             : ListView.builder(
-                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                ),
                                 itemCount: state.filtered.length,
                                 itemBuilder: (context, i) {
                                   final q = state.filtered[i];
@@ -161,12 +163,15 @@ class _QuestListViewState extends State<_QuestListView>
                                           ),
                                         ],
                                       ),
-                                      subtitle: Text('${q.no} \u2022 ${q.reward}z'),
+                                      subtitle: Text(
+                                        '${q.no} \u2022 ${q.reward}z',
+                                      ),
                                       trailing: const Icon(
                                         Icons.chevron_right,
                                         size: 20,
                                       ),
-                                      onTap: () => context.go('/quests/${q.id}'),
+                                      onTap: () =>
+                                          context.push('/quests/${q.id}'),
                                     ),
                                   );
                                 },

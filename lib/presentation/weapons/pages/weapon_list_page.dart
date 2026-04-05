@@ -293,7 +293,7 @@ class _WeaponList extends StatelessWidget {
       itemBuilder: (context, i) => _WeaponCard(
         weapon: weapons[i],
         weaponType: type,
-        onTap: () => context.go('/weapons/${type.short}/${weapons[i].index}'),
+        onTap: () => context.push('/weapons/${type.short}/${weapons[i].index}'),
       ),
     );
   }
