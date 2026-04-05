@@ -22,20 +22,29 @@ class WeaponCategoryListPage extends StatelessWidget {
         getLineage: getIt(),
       )..add(const WeaponCategoriesRequested()),
       child: Scaffold(
-        appBar: AppBar(title: const Text('MH3rd Database'), centerTitle: false),
-        body: BlocBuilder<WeaponBloc, WeaponState>(
-          builder: (context, state) {
-            if (state is WeaponLoading) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            if (state is WeaponCategoriesLoaded) {
-              return _CategoryGrid(categories: state.categories);
-            }
-            if (state is WeaponError) {
-              return Center(child: Text(state.message));
-            }
-            return const SizedBox.shrink();
-          },
+        body: SafeArea(
+          bottom: false,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: BlocBuilder<WeaponBloc, WeaponState>(
+                  builder: (context, state) {
+                    if (state is WeaponLoading) {
+                      return const Center(child: CircularProgressIndicator());
+                    }
+                    if (state is WeaponCategoriesLoaded) {
+                      return _CategoryGrid(categories: state.categories);
+                    }
+                    if (state is WeaponError) {
+                      return Center(child: Text(state.message));
+                    }
+                    return const SizedBox.shrink();
+                  },
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -49,7 +58,7 @@ class _CategoryGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
       itemCount: categories.length,
       itemBuilder: (context, i) {
         final cat = categories[i];

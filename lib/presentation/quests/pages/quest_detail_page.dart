@@ -56,7 +56,7 @@ class _QuestDetailView extends StatelessWidget {
   Widget build(BuildContext context) {
     final q = detail.quest;
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
       children: [
         Card(
           child: Padding(

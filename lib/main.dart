@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'MH3RD Database',
       theme: ThemeData.dark(),
       routerConfig: router,
     );

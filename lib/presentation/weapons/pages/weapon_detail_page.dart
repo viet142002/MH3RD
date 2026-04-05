@@ -66,7 +66,7 @@ class _WeaponDetailView extends StatelessWidget {
         ],
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
         children: [
           _StatsCard(w: w),
           const SizedBox(height: 12),

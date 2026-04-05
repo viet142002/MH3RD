@@ -287,7 +287,7 @@ class _WeaponList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 120),
       itemCount: weapons.length,
       separatorBuilder: (context, index) => const SizedBox(height: 8),
       itemBuilder: (context, i) => _WeaponCard(

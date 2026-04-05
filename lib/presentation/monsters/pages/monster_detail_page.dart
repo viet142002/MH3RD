@@ -134,7 +134,7 @@ class _MonsterDetailViewState extends State<_MonsterDetailView>
       );
     }
     return ListView.builder(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
       itemCount: groups.length,
       itemBuilder: (context, index) {
         final group = groups[index];
@@ -171,7 +171,7 @@ class _MonsterDetailViewState extends State<_MonsterDetailView>
       );
     }
     return ListView.builder(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
       itemCount: groups.length,
       itemBuilder: (context, index) {
         final group = groups[index];

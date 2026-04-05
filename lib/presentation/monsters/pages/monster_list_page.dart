@@ -39,11 +39,12 @@ class _MonsterListViewState extends State<_MonsterListView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Monsters')),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(16),
+      body: SafeArea(
+        bottom: false,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
             child: TextField(
               controller: _searchController,
               onChanged: (q) =>
@@ -69,7 +70,7 @@ class _MonsterListViewState extends State<_MonsterListView> {
                     return const Center(child: Text('No monsters found'));
                   }
                   return ListView.separated(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 100),
                     itemCount: state.filtered.length,
                     separatorBuilder: (context, index) =>
                         const SizedBox(height: 8),
@@ -100,6 +101,7 @@ class _MonsterListViewState extends State<_MonsterListView> {
           ),
         ],
       ),
+    ),
     );
   }
 }
