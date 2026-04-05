@@ -8,7 +8,8 @@ import '../../presentation/weapons/pages/weapon_list_page.dart';
 import '../../presentation/weapons/pages/weapon_detail_page.dart';
 import '../../presentation/monsters/pages/monster_list_page.dart';
 import '../../presentation/monsters/pages/monster_detail_page.dart';
-// import '../../presentation/weapons/pages/weapon_tree_page.dart';
+import '../../presentation/quests/pages/quest_list_page.dart';
+import '../../presentation/quests/pages/quest_detail_page.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
 final _shellNavigatorKey = GlobalKey<NavigatorState>();
@@ -24,15 +25,6 @@ final router = GoRouter(
         GoRoute(
           path: AppRoutes.monsters,
           builder: (context, state) => const MonsterListPage(),
-          routes: [
-            GoRoute(
-              path: ':id',
-              builder: (context, state) {
-                final id = int.parse(state.pathParameters['id']!);
-                return MonsterDetailPage(id: id);
-              },
-            ),
-          ],
         ),
         GoRoute(
           path: AppRoutes.weapons,
@@ -47,19 +39,6 @@ final router = GoRouter(
                     WeaponType.fromShort(short) ?? WeaponType.greatSword;
                 return WeaponListPage(type: type);
               },
-              routes: [
-                GoRoute(
-                  path: ':index',
-                  name: 'weapon-detail',
-                  builder: (_, state) {
-                    final short = state.pathParameters['type']!;
-                    final index = int.parse(state.pathParameters['index']!);
-                    final type =
-                        WeaponType.fromShort(short) ?? WeaponType.greatSword;
-                    return WeaponDetailPage(type: type, index: index);
-                  },
-                ),
-              ],
             ),
           ],
         ),
@@ -73,47 +52,35 @@ final router = GoRouter(
         ),
         GoRoute(
           path: AppRoutes.quests,
-          builder: (context, state) => const WeaponCategoryListPage(),
+          builder: (context, state) => const QuestListPage(),
         ),
       ],
     ),
-    // GoRoute(
-    //   path: '/weapons',
-    //   name: 'weapon-categories',
-    //   builder: (_, __) => const WeaponCategoryListPage(),
-    //   routes: [
-    //     GoRoute(
-    //       path: ':type',
-    //       name: 'weapon-list',
-    //       builder: (_, state) {
-    //         final short = state.pathParameters['type']!;
-    //         final type = WeaponType.fromShort(short) ?? WeaponType.greatSword;
-    //         return WeaponListPage(type: type);
-    //       },
-    //       routes: [
-    //         GoRoute(
-    //           path: ':index',
-    //           name: 'weapon-detail',
-    //           builder: (_, state) {
-    //             final short = state.pathParameters['type']!;
-    //             final index = int.parse(state.pathParameters['index']!);
-    //             final type =
-    //                 WeaponType.fromShort(short) ?? WeaponType.greatSword;
-    //             return WeaponDetailPage(type: type, index: index);
-    //           },
-    //         ),
-    //       ],
-    //     ),
-    // GoRoute(
-    //   path: ':type/tree',
-    //   name: 'weapon-tree',
-    //   builder: (_, state) {
-    //     final short = state.pathParameters['type']!;
-    //     final type = WeaponType.fromShort(short) ?? WeaponType.greatSword;
-    //     return WeaponTreePage(type: type);
-    //   },
-    // ),
-    // ],
-    // ),
+    GoRoute(
+      path: '/weapons/:type/:index',
+      name: 'weapon-detail',
+      builder: (_, state) {
+        final short = state.pathParameters['type']!;
+        final index = int.parse(state.pathParameters['index']!);
+        final type = WeaponType.fromShort(short) ?? WeaponType.greatSword;
+        return WeaponDetailPage(type: type, index: index);
+      },
+    ),
+    GoRoute(
+      path: '/monsters/:id',
+      name: 'monster-detail',
+      builder: (_, state) {
+        final id = int.parse(state.pathParameters['id']!);
+        return MonsterDetailPage(id: id);
+      },
+    ),
+    GoRoute(
+      path: '/quests/:id',
+      name: 'quest-detail',
+      builder: (_, state) {
+        final id = int.parse(state.pathParameters['id']!);
+        return QuestDetailPage(id: id);
+      },
+    ),
   ],
 );

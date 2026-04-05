@@ -1819,7 +1819,7 @@
     "type": "N",
     "hub": "G",
     "star": 5,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "5★ Urgent",
     "objectives": null
   },
@@ -1832,7 +1832,7 @@
     "type": "U",
     "hub": "G",
     "star": 5,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "All 5★ Key Quests",
     "objectives": null
   },
@@ -3013,7 +3013,7 @@
     "type": "N",
     "hub": "G",
     "star": 7,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "None",
     "objectives": [
       {
@@ -3451,7 +3451,7 @@
     "type": "K",
     "hub": "G",
     "star": 8,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "None",
     "objectives": [
       {
@@ -3477,7 +3477,7 @@
     "type": "N",
     "hub": "G",
     "star": 8,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "None",
     "objectives": [
       {
@@ -3497,7 +3497,7 @@
     "type": "N",
     "hub": "G",
     "star": 8,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "None",
     "objectives": [
       {
@@ -4051,7 +4051,7 @@
     "type": "U",
     "hub": "G",
     "star": 8,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "All 8★ Key Quests",
     "objectives": [
       {
@@ -4071,7 +4071,7 @@
     "type": "U",
     "hub": "G",
     "star": 8,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "8★ Jhen Mohran Urgent",
     "objectives": [
       {
@@ -4084,7 +4084,7 @@
   },
   {
     "_id": 190,
-    "no": 0,
+    "no": "1/19",
     "name": "Deliver Paw Pass Ticket",
     "time": "Day",
     "reward": 12,
@@ -4104,7 +4104,7 @@
   },
   {
     "_id": 191,
-    "no": 1,
+    "no": "2/19",
     "name": "Deliver Paw Pass Ticket",
     "time": "Day",
     "reward": 12,
@@ -4124,7 +4124,7 @@
   },
   {
     "_id": 192,
-    "no": 2,
+    "no": "3/19",
     "name": "Hunt Qurupeco",
     "time": "Day",
     "reward": 1500,
@@ -4144,7 +4144,7 @@
   },
   {
     "_id": 193,
-    "no": 3,
+    "no": "4/19",
     "name": "Hunt 10 Bullfango",
     "time": "Day",
     "reward": 900,
@@ -4164,7 +4164,7 @@
   },
   {
     "_id": 194,
-    "no": 4,
+    "no": "5/19",
     "name": "Hunt Barroth",
     "time": "Day",
     "reward": 1500,
@@ -4184,7 +4184,7 @@
   },
   {
     "_id": 195,
-    "no": 5,
+    "no": "6/19",
     "name": "Hunt Qurupeco",
     "time": "Night",
     "reward": 1500,
@@ -4204,7 +4204,7 @@
   },
   {
     "_id": 196,
-    "no": 6,
+    "no": "7/19",
     "name": "Hunt 8 Rhenoplos",
     "time": "Night",
     "reward": 900,
@@ -4224,7 +4224,7 @@
   },
   {
     "_id": 197,
-    "no": 7,
+    "no": "8/19",
     "name": "Deliver 5 Monster Guts",
     "time": "Day",
     "reward": 1200,
@@ -4237,7 +4237,7 @@
   },
   {
     "_id": 198,
-    "no": 8,
+    "no": "9/19",
     "name": "Hunt Great Wroggi",
     "time": "Day",
     "reward": 1500,
@@ -4257,7 +4257,7 @@
   },
   {
     "_id": 199,
-    "no": 9,
+    "no": "10/19",
     "name": "Hunt Royal Ludroth",
     "time": "Day",
     "reward": 1500,
@@ -4277,7 +4277,7 @@
   },
   {
     "_id": 200,
-    "no": 10,
+    "no": "11/19",
     "name": "Hunt 20 Bnahabra",
     "time": "Day",
     "reward": 900,
@@ -4297,7 +4297,7 @@
   },
   {
     "_id": 201,
-    "no": 11,
+    "no": "12/19",
     "name": "Hunt Great Jaggi",
     "time": "Night",
     "reward": 900,
@@ -4317,7 +4317,7 @@
   },
   {
     "_id": 202,
-    "no": 12,
+    "no": "13/19",
     "name": "Hunt Royal Ludroth",
     "time": "Night",
     "reward": 1500,
@@ -4337,7 +4337,7 @@
   },
   {
     "_id": 203,
-    "no": 13,
+    "no": "14/19",
     "name": "Hunt 10 Ludroth",
     "time": "Day",
     "reward": 900,
@@ -4357,7 +4357,7 @@
   },
   {
     "_id": 204,
-    "no": 14,
+    "no": "15/19",
     "name": "Deliver 15 Unique Mushrooms",
     "time": "Day",
     "reward": 900,
@@ -4370,7 +4370,7 @@
   },
   {
     "_id": 205,
-    "no": 15,
+    "no": "16/19",
     "name": "Hunt 2 Bulldrome",
     "time": "Day",
     "reward": 2400,
@@ -4390,7 +4390,7 @@
   },
   {
     "_id": 206,
-    "no": 16,
+    "no": "17/19",
     "name": "Hunt Lagombi",
     "time": "Day",
     "reward": 1500,
@@ -4410,7 +4410,7 @@
   },
   {
     "_id": 207,
-    "no": 17,
+    "no": "18/19",
     "name": "Hunt 10 Baggi",
     "time": "Day",
     "reward": 900,
@@ -4430,7 +4430,7 @@
   },
   {
     "_id": 208,
-    "no": 18,
+    "no": "19/19",
     "name": "Deliver 5 Anteka Antlers",
     "time": "Night",
     "reward": 900,
@@ -4450,7 +4450,7 @@
   },
   {
     "_id": 209,
-    "no": 19,
+    "no": "Urgent!",
     "name": "Hunt Rathian",
     "time": "Day",
     "reward": 3000,
@@ -4470,7 +4470,7 @@
   },
   {
     "_id": 210,
-    "no": 0,
+    "no": "1/17",
     "name": "Deliver Paw Pass Ticket",
     "time": "Day",
     "reward": 12,
@@ -4490,7 +4490,7 @@
   },
   {
     "_id": 211,
-    "no": 1,
+    "no": "2/17",
     "name": "Hunt 1 Rathian",
     "time": "Day",
     "reward": 3000,
@@ -4510,7 +4510,7 @@
   },
   {
     "_id": 212,
-    "no": 2,
+    "no": "3/17",
     "name": "Hunt 1 Volvidon",
     "time": "Day",
     "reward": 2400,
@@ -4530,7 +4530,7 @@
   },
   {
     "_id": 213,
-    "no": 3,
+    "no": "4/17",
     "name": "Hunt 1 Nibelsnarf",
     "time": "Day",
     "reward": 2700,
@@ -4550,7 +4550,7 @@
   },
   {
     "_id": 214,
-    "no": 4,
+    "no": "5/17",
     "name": "Hunt 1 Rathian",
     "time": "Night",
     "reward": 3000,
@@ -4570,7 +4570,7 @@
   },
   {
     "_id": 215,
-    "no": 5,
+    "no": "6/17",
     "name": "Hunt Qurupeco",
     "time": "Day",
     "reward": 1500,
@@ -4590,7 +4590,7 @@
   },
   {
     "_id": 216,
-    "no": 6,
+    "no": "7/17",
     "name": "Hunt 2 Arzuros",
     "time": "Night",
     "reward": 2400,
@@ -4610,7 +4610,7 @@
   },
   {
     "_id": 217,
-    "no": 7,
+    "no": "8/17",
     "name": "Hunt Great Baggi",
     "time": "Day",
     "reward": 1500,
@@ -4630,7 +4630,7 @@
   },
   {
     "_id": 218,
-    "no": 8,
+    "no": "9/17",
     "name": "Hunt Gigginox",
     "time": "Night",
     "reward": 2700,
@@ -4650,7 +4650,7 @@
   },
   {
     "_id": 219,
-    "no": 9,
+    "no": "10/17",
     "name": "Hunt 2 Lagombi",
     "time": "Night",
     "reward": 3000,
@@ -4670,7 +4670,7 @@
   },
   {
     "_id": 220,
-    "no": 10,
+    "no": "11/17",
     "name": "Hunt 20 Baggi",
     "time": "Day",
     "reward": 1200,
@@ -4690,7 +4690,7 @@
   },
   {
     "_id": 221,
-    "no": 11,
+    "no": "12/17",
     "name": "Deliver 8 Bloodstones",
     "time": "Day",
     "reward": 1200,
@@ -4710,7 +4710,7 @@
   },
   {
     "_id": 222,
-    "no": 12,
+    "no": "13/17",
     "name": "Hunt Volvidon",
     "time": "Day",
     "reward": 2400,
@@ -4730,7 +4730,7 @@
   },
   {
     "_id": 223,
-    "no": 13,
+    "no": "14/17",
     "name": "Hunt 2 Great Wroggi",
     "time": "Night",
     "reward": 3000,
@@ -4750,7 +4750,7 @@
   },
   {
     "_id": 224,
-    "no": 14,
+    "no": "15/17",
     "name": "Hunt 8 Uroktor",
     "time": "Day",
     "reward": 1200,
@@ -4770,7 +4770,7 @@
   },
   {
     "_id": 225,
-    "no": 15,
+    "no": "16/17",
     "name": "Hunt 20 Wroggi",
     "time": "Day",
     "reward": 1200,
@@ -4790,7 +4790,7 @@
   },
   {
     "_id": 226,
-    "no": 16,
+    "no": "17/17",
     "name": "Deliver 15 coal",
     "time": "Day",
     "reward": 1200,
@@ -4810,7 +4810,7 @@
   },
   {
     "_id": 227,
-    "no": 17,
+    "no": "Urgent!",
     "name": "Hunt Zinogre",
     "time": "Day",
     "reward": 3600,
@@ -4830,7 +4830,7 @@
   },
   {
     "_id": 228,
-    "no": 0,
+    "no": "1/17",
     "name": "Hunt Zinogre",
     "time": "Night",
     "reward": 3600,
@@ -4850,7 +4850,7 @@
   },
   {
     "_id": 229,
-    "no": 1,
+    "no": "2/17",
     "name": "Hunt Nargacuga",
     "time": "Night",
     "reward": 3300,
@@ -4870,7 +4870,7 @@
   },
   {
     "_id": 230,
-    "no": 2,
+    "no": "3/17",
     "name": "Hunt Nargacuga",
     "time": "Night",
     "reward": 3300,
@@ -4890,7 +4890,7 @@
   },
   {
     "_id": 231,
-    "no": 3,
+    "no": "4/17",
     "name": "Hunt 2 Royal Ludroth",
     "time": "Day",
     "reward": 4200,
@@ -4910,7 +4910,7 @@
   },
   {
     "_id": 232,
-    "no": 4,
+    "no": "5/17",
     "name": "Hunt Rathalos",
     "time": "Day",
     "reward": 3600,
@@ -4930,7 +4930,7 @@
   },
   {
     "_id": 233,
-    "no": 5,
+    "no": "6/17",
     "name": "Hunt Zinogre",
     "time": "Day",
     "reward": 3600,
@@ -4950,7 +4950,7 @@
   },
   {
     "_id": 234,
-    "no": 6,
+    "no": "7/17",
     "name": "Hunt Barioth",
     "time": "Day",
     "reward": 3300,
@@ -4970,7 +4970,7 @@
   },
   {
     "_id": 235,
-    "no": 7,
+    "no": "8/17",
     "name": "Hunt 2 Great Baggi",
     "time": "Night",
     "reward": 3600,
@@ -4990,7 +4990,7 @@
   },
   {
     "_id": 236,
-    "no": 8,
+    "no": "9/17",
     "name": "Hunt Uragaan",
     "time": "Day",
     "reward": 3600,
@@ -5010,7 +5010,7 @@
   },
   {
     "_id": 237,
-    "no": 9,
+    "no": "10/17",
     "name": "Hunt Rathalos",
     "time": "Night",
     "reward": 3600,
@@ -5030,7 +5030,7 @@
   },
   {
     "_id": 238,
-    "no": 10,
+    "no": "11/17",
     "name": "Hunt 2 Volvidon",
     "time": "Night",
     "reward": 4800,
@@ -5050,7 +5050,7 @@
   },
   {
     "_id": 239,
-    "no": 11,
+    "no": "12/17",
     "name": "Hunt 15 Uroktor",
     "time": "Day",
     "reward": 1500,
@@ -5070,7 +5070,7 @@
   },
   {
     "_id": 240,
-    "no": 12,
+    "no": "13/17",
     "name": "Hunt 3 Rathian",
     "time": "Day",
     "reward": 3600,
@@ -5090,7 +5090,7 @@
   },
   {
     "_id": 241,
-    "no": 13,
+    "no": "14/17",
     "name": "Hunt Bulldrome, Great Baggi, Lagombi",
     "time": "Day",
     "reward": 4200,
@@ -5122,7 +5122,7 @@
   },
   {
     "_id": 242,
-    "no": 14,
+    "no": "15/17",
     "name": "Hunt Volvidon, Nibelsnarf",
     "time": "Day",
     "reward": 4800,
@@ -5148,7 +5148,7 @@
   },
   {
     "_id": 243,
-    "no": 15,
+    "no": "16/17",
     "name": "Hunt Great Wroggi, Royal Ludroth",
     "time": "Day",
     "reward": 3600,
@@ -5174,7 +5174,7 @@
   },
   {
     "_id": 244,
-    "no": 16,
+    "no": "17/17",
     "name": "Hunt Arzuros, Rathian",
     "time": "Day",
     "reward": 4200,
@@ -5200,7 +5200,7 @@
   },
   {
     "_id": 245,
-    "no": 17,
+    "no": "Urgent!",
     "name": "Hunt Duramboros",
     "time": "",
     "reward": 3900,
@@ -5220,7 +5220,7 @@
   },
   {
     "_id": 246,
-    "no": 0,
+    "no": "1/15",
     "name": "Hunt Duramboros",
     "time": "Day",
     "reward": 3900,
@@ -5240,7 +5240,7 @@
   },
   {
     "_id": 247,
-    "no": 1,
+    "no": "2/15",
     "name": "Hunt Diablos",
     "time": "Day",
     "reward": 4200,
@@ -5260,7 +5260,7 @@
   },
   {
     "_id": 248,
-    "no": 2,
+    "no": "3/15",
     "name": "Hunt Tigrex",
     "time": "Night",
     "reward": 4200,
@@ -5280,7 +5280,7 @@
   },
   {
     "_id": 249,
-    "no": 3,
+    "no": "4/15",
     "name": "Hunt Duramboros",
     "time": "Night",
     "reward": 3900,
@@ -5300,7 +5300,7 @@
   },
   {
     "_id": 250,
-    "no": 4,
+    "no": "5/15",
     "name": "Hunt Duramboros, Royal Ludroth",
     "time": "Day",
     "reward": 6000,
@@ -5326,7 +5326,7 @@
   },
   {
     "_id": 251,
-    "no": 5,
+    "no": "6/15",
     "name": "Hunt Tigrex",
     "time": "Day",
     "reward": 4200,
@@ -5346,7 +5346,7 @@
   },
   {
     "_id": 252,
-    "no": 6,
+    "no": "7/15",
     "name": "Hunt 2 Barioth",
     "time": "Night",
     "reward": 6600,
@@ -5366,7 +5366,7 @@
   },
   {
     "_id": 253,
-    "no": 7,
+    "no": "8/15",
     "name": "Hunt Tigrex, Gigginox",
     "time": "Day",
     "reward": 6900,
@@ -5392,7 +5392,7 @@
   },
   {
     "_id": 254,
-    "no": 8,
+    "no": "9/15",
     "name": "Hunt Agnaktor",
     "time": "Day",
     "reward": 3900,
@@ -5412,7 +5412,7 @@
   },
   {
     "_id": 255,
-    "no": 9,
+    "no": "10/15",
     "name": "Hunt 2 Uragaan",
     "time": "Night",
     "reward": 7200,
@@ -5432,7 +5432,7 @@
   },
   {
     "_id": 256,
-    "no": 10,
+    "no": "11/15",
     "name": "Hunt Rathalos, Rathian",
     "time": "Day",
     "reward": 8400,
@@ -5458,7 +5458,7 @@
   },
   {
     "_id": 257,
-    "no": 11,
+    "no": "12/15",
     "name": "Hunt Nargacuga, Zinogre",
     "time": "Day",
     "reward": 6900,
@@ -5484,7 +5484,7 @@
   },
   {
     "_id": 258,
-    "no": 12,
+    "no": "13/15",
     "name": "Hunt Barroth, Diablos",
     "time": "Night",
     "reward": 6300,
@@ -5510,7 +5510,7 @@
   },
   {
     "_id": 259,
-    "no": 13,
+    "no": "14/15",
     "name": "Hunt Rathalos, Agnaktor",
     "time": "Day",
     "reward": 7500,
@@ -5536,14 +5536,14 @@
   },
   {
     "_id": 260,
-    "no": 14,
+    "no": "15/15",
     "name": "Hunt Jhen Mohran",
     "time": "Day",
     "reward": 9000,
     "type": "U",
     "hub": "V",
     "star": 6,
-    "map_id": "UNKNOWN",
+    "map_id": 0,
     "unlock_condition": "UNKNOWN",
     "objectives": [
       {
@@ -5556,7 +5556,7 @@
   },
   {
     "_id": 261,
-    "no": 15,
+    "no": "Urgent!",
     "name": "Hunt Deviljho, Tigrex, Nargacuga",
     "time": "Day",
     "reward": 21000,

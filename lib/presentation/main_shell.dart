@@ -10,9 +10,9 @@ class MainShell extends StatelessWidget {
   int _indexFromLocation(String location) {
     if (location.startsWith(AppRoutes.monsters)) return 0;
     if (location.startsWith(AppRoutes.weapons)) return 1;
-    if (location.startsWith(AppRoutes.armor)) return 2;
-    if (location.startsWith(AppRoutes.items)) return 3;
-    if (location.startsWith(AppRoutes.quests)) return 4;
+    if (location.startsWith(AppRoutes.items)) return 2;
+    if (location.startsWith(AppRoutes.quests)) return 3;
+    if (location.startsWith(AppRoutes.armor)) return 4;
     return 0;
   }
 
@@ -25,10 +25,10 @@ class MainShell extends StatelessWidget {
         context.go(AppRoutes.weapons);
         break;
       case 2:
-        context.go(AppRoutes.armor);
+        context.go(AppRoutes.items);
         break;
       case 3:
-        context.go(AppRoutes.items);
+        context.go(AppRoutes.quests);
         break;
     }
   }
@@ -42,7 +42,8 @@ class MainShell extends StatelessWidget {
       MhAssetIcon.monster('Black_Diablos', size: 24),
       MhAssetIcon.equipment('gs', size: 24),
       MhAssetIcon.item('scraps_gray', size: 24),
-      Icon(Icons.menu, size: 24),
+      MhAssetIcon.item('book_white', size: 24), // Quest icon
+      const Icon(Icons.menu, size: 24, color: Colors.white),
     ];
 
     return Scaffold(
@@ -52,9 +53,9 @@ class MainShell extends StatelessWidget {
       bottomNavigationBar: SafeArea(
         child: Container(
           height: 64,
-          margin: const EdgeInsets.fromLTRB(24, 0, 24, 12),
+          margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
           decoration: BoxDecoration(
-            color: Colors.black54,
+            color: Colors.black.withValues(alpha: 0.8),
             borderRadius: BorderRadius.circular(24),
           ),
           child: LayoutBuilder(

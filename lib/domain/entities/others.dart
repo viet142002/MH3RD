@@ -216,12 +216,16 @@ enum QuestHub {
 
 enum QuestType {
   normal('N'),
+  key('K'),
+  urgent('U'),
   event('E'),
   special('S');
 
   final String code;
   const QuestType(this.code);
   static QuestType fromCode(String c) => switch (c) {
+    'K' => key,
+    'U' => urgent,
     'E' => event,
     'S' => special,
     _ => normal,

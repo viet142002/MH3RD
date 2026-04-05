@@ -304,10 +304,70 @@ class FilterQuests {
   final QuestRepository r;
   const FilterQuests(this.r);
   Future<List<Quest>> call({QuestHub? hub, int? star, int? monsterId}) async {
-    if (hub != null) return r.filterByHub(hub);
-    if (star != null) return r.filterByStar(star);
-    if (monsterId != null) return r.filterByMonster(monsterId);
-    return r.getAll();
+    List<Quest> quests;
+
+    if (hub != null) {
+      quests = await r.filterByHub(hub);
+    } else if (star != null) {
+      quests = await r.filterByStar(star);
+    } else if (monsterId != null) {
+      quests = await r.filterByMonster(monsterId);
+    } else {
+      quests = await r.getAll();
+    }
+
+    if (hub != null && star != null) {
+      quests = quests.where((q) => q.star == star).toList();
+    }
+    if (monsterId != null) {
+      quests = quests.where((q) => q.objectives.any((o) => o.targetId == monsterId)).toList();
+    }
+
+    return quests;
+  }
+}
+
+class QuestDetailData {
+  final Quest quest;
+  final Map<int, Monster> monsters;
+  final Map<int, Item> items;
+  const QuestDetailData({
+    required this.quest,
+    required this.monsters,
+    required this.items,
+  });
+}
+
+class GetQuestDetail {
+  final QuestRepository questRepo;
+  final MonsterRepository monsterRepo;
+  final ItemRepository itemRepo;
+  const GetQuestDetail(this.questRepo, this.monsterRepo, this.itemRepo);
+
+  Future<QuestDetailData?> call(int id) async {
+    final quest = await questRepo.getById(id);
+    if (quest == null) return null;
+
+    final monsterIds =
+        quest.objectives
+            .where((o) => o.targetType == 'monster')
+            .map((o) => o.targetId)
+            .toSet();
+    final itemIds =
+        quest.objectives
+            .where((o) => o.targetType == 'item')
+            .map((o) => o.targetId)
+            .toSet();
+
+    final monsters = <int, Monster>{};
+    for (final mid in monsterIds) {
+      final m = await monsterRepo.getById(mid);
+      if (m != null) monsters[mid] = m;
+    }
+
+    final items = await itemRepo.getMapByIds(itemIds);
+
+    return QuestDetailData(quest: quest, monsters: monsters, items: items);
   }
 }
 

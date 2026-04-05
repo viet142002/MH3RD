@@ -93,7 +93,8 @@ Future<void> configureDependencies() async {
   getIt
     ..registerLazySingleton(() => GetAllQuests(getIt()))
     ..registerLazySingleton(() => SearchQuests(getIt()))
-    ..registerLazySingleton(() => FilterQuests(getIt()));
+    ..registerLazySingleton(() => FilterQuests(getIt()))
+    ..registerLazySingleton(() => GetQuestDetail(getIt(), getIt(), getIt()));
 
   // ── Global search ─────────────────────────────────────────────────────────
   getIt.registerLazySingleton(

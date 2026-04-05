@@ -165,9 +165,7 @@ class ItemModel extends Item {
       final decs = u['decorations'];
       uses = ItemUses(
         decorationIds: decs != null && decs is List
-            ? (decs as List)
-                  .map((e) => (e as Map<String, dynamic>)['id'] as int)
-                  .toList()
+            ? decs.map((e) => (e as Map<String, dynamic>)['id'] as int).toList()
             : null,
       );
     }
